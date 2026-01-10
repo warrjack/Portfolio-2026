@@ -1,0 +1,69 @@
+  <section id="project-screen" class="hidden min-h-screen w-full overflow-y-auto bg-[#0b0d10]" role="region" aria-labelledby="modal-title" tabindex="-1">
+      <div class="sticky top-0 z-10 border-b border-white/5 bg-[#0b0d10]/90 backdrop-blur">
+        <div class="mx-auto max-w-5xl px-4 sm:px-6">
+          <div class="flex h-16 items-center justify-between">
+            <button onclick="closeProject()" class="group flex items-center gap-2 text-sm font-medium text-slate-400 hover:text-white transition-colors">
+              <i data-lucide="arrow-left" class="h-4 w-4 transition-transform group-hover:-translate-x-1"></i>
+              Back
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
+        <div class="grid lg:grid-cols-[2fr,1fr] gap-12">
+          <div class="space-y-8">
+            <!-- Carousel Container -->
+            <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/10 group">
+              <!-- Slider Track -->
+              <div id="modal-carousel-track" class="flex h-full w-full transition-transform duration-500 ease-out">
+                <!-- Images injected via JS -->
+              </div>
+              
+              <!-- Carousel Controls -->
+              <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white opacity-0 backdrop-blur hover:bg-black/70 group-hover:opacity-100 transition-all duration-300 z-10">
+                <i data-lucide="chevron-left" class="h-5 w-5"></i>
+              </button>
+              <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white opacity-0 backdrop-blur hover:bg-black/70 group-hover:opacity-100 transition-all duration-300 z-10">
+                <i data-lucide="chevron-right" class="h-5 w-5"></i>
+              </button>
+              
+              <!-- Dots -->
+              <div id="modal-carousel-dots" class="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2 z-10">
+                <!-- Dots injected via JS -->
+              </div>
+            </div>
+
+            <div>
+              <h1 id="modal-title" class="text-3xl font-bold text-white tracking-tight"></h1>
+              <p id="modal-subtitle" class="mt-2 text-lg text-slate-400"></p>
+            </div>
+            <div class="prose prose-invert prose-slate max-w-none">
+              <p id="modal-description" class="text-slate-300 leading-relaxed"></p>
+            </div>
+          </div>
+          <div class="space-y-6">
+            <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+              <h3 class="text-sm font-semibold text-white">Technologies</h3>
+              <div id="modal-stack" class="mt-4 flex flex-wrap gap-2"></div>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+              <h3 class="text-sm font-semibold text-white">Project Details</h3>
+              <dl class="mt-4 space-y-4 text-sm">
+                <div class="flex justify-between border-b border-white/5 pb-2">
+                  <dt class="text-slate-500">Started</dt>
+                  <dd id="modal-started" class="text-slate-200 text-right"></dd>
+                </div>
+                <div class="flex justify-between border-b border-white/5 pb-2">
+                  <dt class="text-slate-500">Last Updated</dt>
+                  <dd id="modal-updated" class="text-slate-200 text-right"></dd>
+                </div>
+                <div class="flex justify-between pt-2">
+                  <dt class="text-slate-500">Role</dt>
+                  <dd class="text-slate-200 text-right">Sole Developer</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
