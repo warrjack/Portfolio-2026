@@ -101,62 +101,6 @@
     <script>
       lucide.createIcons();
 
-      // Project data
-      const mainProjects = [
-        {
-          title: "Vibe Coding",
-          subtitle: "Editor Tools",
-          desc: "Extensions for flow state.",
-          stack: ["TypeScript", "VS Code API"],
-          started: "Aug 2024",
-          updated: "Dec 2024",
-          images: [
-            "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-            "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
-          ]
-        },
-        {
-          title: "Data Scraper",
-          subtitle: "Python ETL",
-          desc: "Financial data pipeline.",
-          stack: ["Python", "Pandas", "AWS"],
-          started: "Jan 2023",
-          updated: "Oct 2023",
-          images: [
-            "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=1000&auto=format&fit=crop"
-          ]
-        },
-        {
-          title: "3D Engine Core",
-          subtitle: "Unity Framework",
-          desc: "Mobile physics engine.",
-          stack: ["C#", "Unity", "HLSL"],
-          started: "Mar 2021",
-          updated: "May 2022",
-          images: [
-            "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=1000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1614741118881-1e2593882774?q=80&w=1000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop"
-          ]
-        },
-        {
-          title: "SaaS Template",
-          subtitle: "Next.js Starter",
-          desc: "B2B SaaS boilerplate.",
-          stack: ["Next.js", "Stripe", "Postgres"],
-          started: "Nov 2023",
-          updated: "Feb 2025",
-          images: [
-            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
-          ]
-        }
-      ];
-
       // Carousel state
       let currentSlide = 0;
       let totalSlides = 0;
@@ -164,7 +108,6 @@
       function updateCarousel() {
         const track = document.getElementById('modal-carousel-track');
         track.style.transform = `translateX(-${currentSlide * 100}%)`;
-        
         const dots = document.getElementById('modal-carousel-dots').children;
         Array.from(dots).forEach((dot, idx) => {
           if (idx === currentSlide) {
@@ -187,43 +130,39 @@
         updateCarousel();
       }
 
-      function generateProjectData(index) {
-        const techs = [
-          { name: 'Python', color: 'text-emerald-400' },
-          { name: 'Unity', color: 'text-blue-400' },
-          { name: 'HTML/CSS', color: 'text-orange-400' },
-          { name: 'React', color: 'text-cyan-400' },
-          { name: 'Rust', color: 'text-red-400' }
-        ];
-        const types = ['Script', 'Game', 'App', 'Bot', 'Site'];
-        const tech = techs[index % techs.length];
-        const type = types[index % types.length];
-        
-        return {
-          title: `${tech.name} ${type} ${index + 1}`,
-          subtitle: `${tech.name} Development`,
-          desc: `A robust ${tech.name} project focusing on performance and scalability.`,
-          stack: [tech.name, 'Git', 'CI/CD'],
-          started: "Jan 202" + (index % 5),
-          updated: "Mar 2025",
-          images: [
-            "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=600&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1627398242454-45a1465c2479?q=80&w=600&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=600&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=600&auto=format&fit=crop"
-          ][index % 5],
-          techColor: tech.color
-        };
-      }
-
       // Get project ID from URL
       const params = new URLSearchParams(window.location.search);
       const projectId = parseInt(params.get('id')) || 0;
-      const project = projectId < 4 ? mainProjects[projectId] : generateProjectData(projectId);
 
-      // Populate page on load
-      window.addEventListener('load', () => {
+      async function fetchProjectData() {
+        // Fetch main projects from JSON
+        const res = await fetch('data/projects.json');
+        const mainProjects = await res.json();
+        let project;
+        if (projectId < mainProjects.length) {
+          project = mainProjects[projectId];
+        } else {
+          // Dynamically import generateProjectData
+          try {
+            const module = await import('./data/generateProjectData.js');
+            project = module.generateProjectData(projectId);
+          } catch (e) {
+            project = {
+              title: 'Unknown Project',
+              subtitle: '',
+              desc: 'No data found.',
+              stack: [],
+              started: '',
+              updated: '',
+              images: []
+            };
+          }
+        }
+        return project;
+      }
+
+      window.addEventListener('load', async () => {
+        const project = await fetchProjectData();
         document.getElementById('modal-title').textContent = project.title;
         document.getElementById('modal-subtitle').textContent = project.subtitle;
         document.getElementById('modal-description').textContent = project.desc + " This project represents a deep dive into scalable architecture. Starting from " + project.started + ", it evolved into a robust solution.";
@@ -237,7 +176,7 @@
         track.innerHTML = '';
         dotsContainer.innerHTML = '';
         
-        const imagesList = project.images;
+        const imagesList = project.images || [];
         totalSlides = imagesList.length;
         currentSlide = 0;
 
@@ -257,7 +196,7 @@
         // Populate stack
         const stackContainer = document.getElementById('modal-stack');
         stackContainer.innerHTML = '';
-        project.stack.forEach(tech => {
+        (project.stack || []).forEach(tech => {
           const s = document.createElement('span');
           s.className = "rounded-md border border-white/10 bg-white/5 px-2 py-1 text-xs text-slate-300";
           s.textContent = tech;

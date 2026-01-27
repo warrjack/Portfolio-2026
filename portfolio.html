@@ -63,61 +63,17 @@
     <script>
       lucide.createIcons();
 
-      // Project data
-      const mainProjects = [
-        {
-          title: "Vibe Coding",
-          subtitle: "Editor Tools",
-          desc: "Extensions for flow state.",
-          stack: ["TypeScript", "VS Code API"],
-          started: "Aug 2024",
-          updated: "Dec 2024",
-          images: [
-            "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-            "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
-          ]
-        },
-        {
-          title: "Data Scraper",
-          subtitle: "Python ETL",
-          desc: "Financial data pipeline.",
-          stack: ["Python", "Pandas", "AWS"],
-          started: "Jan 2023",
-          updated: "Oct 2023",
-          images: [
-            "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=1000&auto=format&fit=crop"
-          ]
-        },
-        {
-          title: "3D Engine Core",
-          subtitle: "Unity Framework",
-          desc: "Mobile physics engine.",
-          stack: ["C#", "Unity", "HLSL"],
-          started: "Mar 2021",
-          updated: "May 2022",
-          images: [
-            "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=1000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1614741118881-1e2593882774?q=80&w=1000&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop"
-          ]
-        },
-        {
-          title: "SaaS Template",
-          subtitle: "Next.js Starter",
-          desc: "B2B SaaS boilerplate.",
-          stack: ["Next.js", "Stripe", "Postgres"],
-          started: "Nov 2023",
-          updated: "Feb 2025",
-          images: [
-            "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
-            "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
-          ]
-        }
-      ];
+      // Fetch project data from projects.json
+      let mainProjects = [];
+      fetch('projects.json')
+        .then(response => response.json())
+        .then(data => {
+          mainProjects = data;
+          // You can use mainProjects here if needed
+        })
+        .catch(error => {
+          console.error('Error loading projects.json:', error);
+        });
 
       function generateProjectData(index) {
         const techs = [
