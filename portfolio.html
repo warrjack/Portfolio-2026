@@ -65,7 +65,7 @@
 
       // Fetch project data from projects.json
       let mainProjects = [];
-      fetch('projects.json')
+      fetch('data/projects.json')
         .then(response => response.json())
         .then(data => {
           mainProjects = data;
