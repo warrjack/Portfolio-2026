@@ -167,7 +167,7 @@
         } else {
           // Dynamically import generateProjectData
           try {
-            const module = await import('./data/generateProjectData.js');
+            const module = await import('data/generateProjectData.js');
             project = module.generateProjectData(projectId);
           } catch (e) {
             project = {
