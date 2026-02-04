@@ -41,19 +41,19 @@
       </div>
       <div class="mx-auto max-w-5xl px-4 py-12 sm:px-6">
         <div class="grid lg:grid-cols-[2fr,1fr] gap-12">
-          <div class="space-y-8">
+          <div class="space-y-8 order-1">
             <!-- Carousel Container -->
-            <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/10 group">
+            <div class="relative aspect-[4/3] sm:aspect-[4/3] lg:aspect-video w-full overflow-hidden rounded-xl bg-zinc-900 border border-white/10 group">
               <!-- Slider Track -->
               <div id="modal-carousel-track" class="flex h-full w-full transition-transform duration-500 ease-out">
                 <!-- Images injected via JS -->
               </div>
               
-              <!-- Carousel Controls -->
-              <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white opacity-0 backdrop-blur hover:bg-black/70 group-hover:opacity-100 transition-all duration-300 z-10">
+              <!-- Carousel Controls - Always visible on mobile/tablet, hover on desktop -->
+              <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white opacity-100 lg:opacity-0 backdrop-blur hover:bg-black/70 group-hover:opacity-100 transition-all duration-300 z-10">
                 <i data-lucide="chevron-left" class="h-5 w-5"></i>
               </button>
-              <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white opacity-0 backdrop-blur hover:bg-black/70 group-hover:opacity-100 transition-all duration-300 z-10">
+              <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 rounded-full bg-black/50 p-2 text-white opacity-100 lg:opacity-0 backdrop-blur hover:bg-black/70 group-hover:opacity-100 transition-all duration-300 z-10">
                 <i data-lucide="chevron-right" class="h-5 w-5"></i>
               </button>
               
@@ -67,16 +67,15 @@
               <h1 id="modal-title" class="text-3xl font-bold text-white tracking-tight"></h1>
               <p id="modal-subtitle" class="mt-2 text-lg text-slate-400"></p>
             </div>
-            <div class="prose prose-invert prose-slate max-w-none">
-              <p id="modal-description" class="text-slate-300 leading-relaxed"></p>
-            </div>
           </div>
-          <div class="space-y-6">
+          
+          <!-- Technologies & Details - order-2 on mobile (after carousel), order-2 on desktop -->
+          <div class="space-y-6 order-2 lg:order-2">
             <div class="rounded-xl border border-white/10 bg-white/5 p-6">
               <h3 class="text-sm font-semibold text-white">Technologies</h3>
               <div id="modal-stack" class="mt-4 flex flex-wrap gap-2"></div>
             </div>
-            <div class="rounded-xl border border-white/10 bg-white/5 p-6">
+            <div class="rounded-xl border border-white/10 bg-white/5 p-6 hidden lg:block">
               <h3 class="text-sm font-semibold text-white">Project Details</h3>
               <dl class="mt-4 space-y-4 text-sm">
                 <div class="flex justify-between border-b border-white/5 pb-2">
@@ -93,6 +92,30 @@
                 </div>
               </dl>
             </div>
+          </div>
+          
+          <!-- Description - order-3 on mobile (after tags), spans full width on desktop -->
+          <div class="lg:col-span-2 prose prose-invert prose-slate max-w-none order-3">
+            <p id="modal-description" class="text-slate-300 leading-relaxed"></p>
+          </div>
+          
+          <!-- Project Details on mobile - shown after description -->
+          <div class="rounded-xl border border-white/10 bg-white/5 p-6 lg:hidden order-4">
+            <h3 class="text-sm font-semibold text-white">Project Details</h3>
+            <dl class="mt-4 space-y-4 text-sm">
+              <div class="flex justify-between border-b border-white/5 pb-2">
+                <dt class="text-slate-500">Started</dt>
+                <dd id="modal-started-mobile" class="text-slate-200 text-right"></dd>
+              </div>
+              <div class="flex justify-between border-b border-white/5 pb-2">
+                <dt class="text-slate-500">Last Updated</dt>
+                <dd id="modal-updated-mobile" class="text-slate-200 text-right"></dd>
+              </div>
+              <div class="flex justify-between pt-2">
+                <dt class="text-slate-500">Role</dt>
+                <dd class="text-slate-200 text-right">Sole Developer</dd>
+              </div>
+            </dl>
           </div>
         </div>
       </div>
@@ -169,6 +192,10 @@
 
         document.getElementById('modal-started').textContent = project.started;
         document.getElementById('modal-updated').textContent = project.updated;
+        
+        // Also populate mobile project details
+        document.getElementById('modal-started-mobile').textContent = project.started;
+        document.getElementById('modal-updated-mobile').textContent = project.updated;
 
         // Populate carousel
         const track = document.getElementById('modal-carousel-track');

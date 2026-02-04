@@ -7,9 +7,9 @@
     "started": "Aug 2024",
     "updated": "Dec 2024",
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "img/Finance_Planner_1.png",
+      "img/Finance_Planner_2.png",
+      "img/Finance_Planner_3.png"
     ]
   },
   {
@@ -123,9 +123,8 @@
     "started": "Aug 2024",
     "updated": "Dec 2024",
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "img/Comet_Fall_1.png",
+      "img/Comet_Fall_2.png"
     ]
   },
   {
@@ -149,9 +148,8 @@
     "started": "Aug 2024",
     "updated": "Dec 2024",
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "img/Task_Manager_1.png",
+      "img/Task_Manager_2.png"
     ]
   },
   {
@@ -175,9 +173,9 @@
     "started": "Aug 2024",
     "updated": "Dec 2024",
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "img/FPV_Simulator_1.png",
+      "img/FPV_Simulator_2.png",
+      "img/FPV_Simulator_3.png"
     ]
   },
   {
@@ -201,9 +199,7 @@
     "started": "Aug 2024",
     "updated": "Dec 2024",
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "img/Good_Ol_Hockey_Game_1.png"
     ]
   },
   {
