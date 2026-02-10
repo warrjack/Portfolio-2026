@@ -150,8 +150,8 @@
         else if (firstTech.toLowerCase().includes('react')) techColor = 'text-cyan-400';
         else if (firstTech.toLowerCase().includes('swift')) techColor = 'text-purple-400';
         
-        const firstImage = Array.isArray(project.images) ? project.images[0] : project.images;
-
+        const firstImage = project.splash_image;//Array.isArray(project.splash_image) ? project.images[0] : project.images;
+        console.log("firstImage: ", firstImage)
         // If this project's title exists in `externalLinks`, open that URL instead
         const href = externalLinks[project.title] || `project.html?id=${originalIndex}`;
         const anchorExtra = href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
@@ -203,7 +203,7 @@
       // Fetch and render projects from projects.json based on publicProjects array
       async function loadProjects() {
         try {
-          const response = await fetch('data/projects.json');
+          const response = await fetch(`data/projects.json?v=${Date.now()}`);
           const projects = await response.json();
           
           // Render main projects grid

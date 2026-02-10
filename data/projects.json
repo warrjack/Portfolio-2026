@@ -430,20 +430,20 @@
     "title": "Lorcana Card Management",
     "subtitle": "AI Card Recognition & Database",
     "desc": "The Lorcana Collection Manager is a full stack web application designed to help players scan, organize, and build decks...",
-    "stack": ["Fullstack", "React", "Django"],
+    "stack": ["Fullstack", "React", "Django", "PyTorch", "OpenCV", "TailwindCSS", "RestAPI"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
     "role": "Lead Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "splash_image": "img/Disney_Lorcana_1.jpg",
     "project-info": {
       "type": "flagship",
       "status": "active",
       "version": "1.0.0"
     },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg"
+      "img/Disney_Lorcana_1.jpg"
     ]
   },
   {
