@@ -2,10 +2,19 @@
   {
     "title": "Finance Planner",
     "subtitle": "Making now and future money visible",
-    "desc": "Finance Planner (Lite) began as a personal project to understand where my money was actually going and how small, everyday decisions compound over time. I wanted something lightweight, fast, and opinionated without the noise, nudges, or over-engineering common in most finance apps. The result is a clean, web-based planner focused on clarity first and control second.\n\nThe tool lets users track income, expenses, and recurring financial habits, then see how those inputs affect cash flow both day-to-day and over time. On one view, users can understand their daily income and spending patterns. On another, a calendar-style view shows projected account balances for every day, making the future impact of decisions immediately visible. Users can add real-world events like paydays, mortgages, spontaneous purchases, or one-off expenses as they happen, keeping the system grounded in reality.\n\nA core design decision was to avoid over-automation. Instead of hiding calculations behind abstractions, the app keeps the numbers visible and understandable. The belief behind this approach is simple. People make better financial decisions when they can clearly see cause and effect.\n\nThis project is evolving into a subscription-based application with deeper analytics, forecasting, and long-term planning features. The goal is to sit comfortably between a spreadsheet and a full financial advisor. Simple enough to use daily, yet powerful enough to shape real decisions. A public preview is planned for Spring 2026.\n\nFrom a product standpoint, this project reflects how I approach building tools that respect user trust, privacy, and attention.",
+    "desc": "This project started from a simple problem I kept running into in real life. Most people are paid bi weekly, but their bills come out on completely different schedules. Some are monthly, some quarterly, some annual, and some happen every single week. It becomes hard to understand what you can actually afford when everything runs on different timelines. I built this finance tracker to make those patterns visible and easy to understand.\n\n The core of the app is a two table system. The first table lets users enter their recurring bills with a name, amount, and frequency. Supported frequencies include daily, weekly, bi weekly, monthly, quarterly, semi annual, and annual. Once the user submits the data, the app automatically converts each bill into its real cost across every other time scale.\n\n The second table shows seven columns, one for each frequency. Each row represents a bill from the input table, but now users can see exactly how much that expense costs them per day, per week, per pay period, per month, and beyond. This makes it easy to compare habits, spot overspending, and understand how small charges can grow over time.\n\n I also added a calendar forecasting feature. Users can enter their current bank balance, add paychecks with start dates, and track when each bill is due. The app updates a running total for every day, including one time expenses. Over time, this shows exactly how much money a user can expect to have on any future date, making planning simple and realistic.",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": "https://finance-planner-2024.netlify.app/",
+    "github": "https://github.com/warrjack/finance-planner",
+    "splash_image": "img/Finance_Planner_1.png",
+    "project-info": {
+      "type": "personal",
+      "status": "demo",
+      "version": "0.3.3"
+    },
     "images": [
       "img/Finance_Planner_1.png",
       "img/Finance_Planner_2.png",
@@ -15,138 +24,278 @@
   {
     "title": "Smart Path",
     "subtitle": "Turning route optimization into travel solutions",
-    "desc": "Smart Path is a web application that applies classic route optimization to real-world planning and exploration. Users drop points of interest onto a map, and the app calculates an efficient route to visit every location with minimal backtracking. The experience is hands-on and visual, making it useful for trip planning, sightseeing, and scenario testing. Multiple optimization strategies are available, and a whiteboard mode allows experimentation beyond geography. Smart Path demonstrates how complex ideas can be made approachable and practical through thoughtful engineering and user-centered design.", "stack": ["HTML", "CSS", "Javascript"],
+    "desc": "Smart Path is a web application that applies classic route optimization to real-world planning and exploration...",
+    "stack": ["HTML", "CSS", "Javascript"],
     "started": "Jan 2023",
     "updated": "Oct 2023",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/Smart_Path_1.png",
+    "project-info": {
+      "type": "personal",
+      "status": "prototype",
+      "version": "0.2.0"
+    },
     "images": [
-      "https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=1000&auto=format&fit=crop"
+      "img/Smart_Path_1.png",
+      "img/Smart_Path_2.png",
+      "img/Smart_Path_3.JPG"
     ]
   },
   {
-    "title": "Quizlet Remake",
+    "title": "Quiz Study Platform",
     "subtitle": "A Vibe-Coding Experiment",
-    "desc": "Quizlet Remake began as an experiment in constraint and AI-assisted development, resulting in a streamlined study tool inspired by Quizlet. Users can create, import, and export question sets, then study them using proven methods like flashcards, multiple choice, and fill-in-the-blank, all in a focused, distraction-free interface. The project demonstrates how thoughtfully guided AI workflows can accelerate software creation while maintaining usability, flexibility, and user ownership.",
+    "desc": "This project started from a simple idea...",
     "stack": ["HTML", "CSS", "Javascript"],
+    "started": "Oct 2025",
+    "updated": "Oct 2025",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/Quizlet_Remake_1.png",
+    "project-info": {
+      "type": "experimental",
+      "status": "demo",
+      "version": "0.4.0"
+    },
+    "images": [
+      "img/Quizlet_Remake_1.png",
+      "https://images.unsplash.com/photo-1614741118881-1e2593882774",
+      "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+    ]
+  },
+  {
+    "title": "Instagram Bot Farm",
+    "subtitle": "Create a network of Instagram bot accounts",
+    "desc": "An experimental automation project exploring large-scale account management, scripting, and system coordination.",
+    "stack": ["Python", "Javascript"],
     "started": "Mar 2021",
     "updated": "May 2022",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/Bot_Farm_1.png",
+    "project-info": {
+      "type": "experimental",
+      "status": "archived",
+      "version": "1.0.0"
+    },
+    "images": ["img/Bot_Farm_1.png"]
+  },
+  {
+    "title": "Ant Simulation",
+    "subtitle": "Simulating Ant Colony Behavior",
+    "desc": "This Unity project is a simple 2D simulation inspired by how ants forage in the real world...",
+    "stack": ["C#", "Unity"],
+    "started": "Nov 2023",
+    "updated": "Feb 2025",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/Ant_Simulation_1.png",
+    "project-info": {
+      "type": "educational",
+      "status": "complete",
+      "version": "1.1.0"
+    },
     "images": [
-      "https://images.unsplash.com/photo-1605647540924-852290f6b0d5?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1614741118881-1e2593882774?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop"
+      "img/Ant_Simulation_1.png",
+      "img/Ant_Simulation_2.png",
+      "img/Ant_Simulation_3.png"
     ]
   },
   {
     "title": "Image Tracer",
     "subtitle": "Tracing and Drawing Tool",
-    "desc": "Image Over Camera is a lightweight web app that lets users overlay, resize, and align reference images directly on a live camera feed for easy tracing and visual alignment. Designed for mobile, it features adjustable transparency, real-time positioning, and background removal, making it effortless for artists and builders to match proportions and placement without setup or extra tools.",
+    "desc": "Image Over Camera is a lightweight web app...",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Nov 2023",
     "updated": "Feb 2025",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
+    "project-info": {
+      "type": "utility",
+      "status": "demo",
+      "version": "0.5.0"
+    },
     "images": [
-      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1200&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
+      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+      "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
     ]
   },
   {
     "title": "Wordle Solver",
     "subtitle": "Helping you find the right word",
-    "desc": "Wordle Solver is a lightweight web tool that analyzes Wordle puzzles to identify the correct solution or recommend the strongest next guess, focusing on decision making and reasoning with a minimal, easy-to-use interface.",
+    "desc": "Wordle Solver is a lightweight web tool...",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "utility",
+      "status": "complete",
+      "version": "1.0.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "Outfit Picker",
     "subtitle": "Removing decision fatigue from getting dressed",
-    "desc": "Outfit Picker is a React-based application designed to take the stress out of choosing what to wear. Instead of photos, users save outfits using cartoon-style templates that represent clothing combinations. This keeps the experience simple, visual, and low-pressure. Users can browse past outfits, select individual items they want to wear, or generate a random suggestion based on previous choices. The focus is on relying on proven combinations rather than overthinking decisions that do not need to be complex. By reinforcing patterns that already work, the app reduces daily friction and makes getting dressed a smoother experience. The project intentionally balances utility with personality. The visual style is friendly and non-judgmental, encouraging engagement without stress. On the technical side, it emphasizes state management, reusable components, and scalable UI patterns in React, ensuring the app can grow with added features without losing simplicity. Outfit Picker demonstrates my approach to consumer-facing products. Practical value comes first, but small moments of delight matter too. The project has clear potential for expansion into recommendation systems, tagging, and personalization while maintaining user privacy and simplicity, showing how thoughtful design can improve everyday routines.",
+    "desc": "Outfit Picker is a React-based application designed to take the stress out of choosing what to wear...",
     "stack": ["React", "Django", "TailwindCSS", "RestAPI"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "consumer",
+      "status": "prototype",
+      "version": "0.6.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "Number Game",
     "subtitle": "Number Strategy Game",
-    "desc": "Number Game is a deceptively simple web game where players must place randomly generated numbers between 1 and 1000 on a growing timeline, positioning each new number higher or lower relative to those already placed. As the sequence fills, available slots shrink, increasing the challenge and encouraging careful thinking. The game explores intuition, probability, and risk assessment in a playful format, balancing caution and bold moves. It features clean game logic, responsive UI, and smooth state transitions, making abstract concepts tangible through approachable, fast, and strategically engaging gameplay.",
+    "desc": "Number Game is a deceptively simple web game where players must place randomly generated numbers...",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "game",
+      "status": "complete",
+      "version": "1.0.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "JSON Converter",
     "subtitle": "Turn lists in to JSON data",
-    "desc": "JSON Tool is a small but highly practical utility that converts lists into properly formatted JSON. Users can define their own separators, and the tool automatically handles the formatting, making it fast and intuitive to use. Built with HTML, CSS, and JavaScript, the project focuses entirely on speed and simplicity. There is no setup, login, or extra features. It does one thing and does it well, giving users immediate results without distraction. The tool was born from repeated friction while preparing data for APIs, configuration files, and prototypes. Instead of opening larger software or writing scripts, I wanted a lightweight solution that works instantly in the browser. The interface is minimal by design. Users can paste input, define their formatting rules, and get clean output right away. While primarily aimed at developers, the simplicity makes it accessible to anyone who needs quick, structured data. JSON Tool reflects my approach to building practical software. Not every project needs to be large or flashy to be valuable. Sometimes the biggest impact comes from removing small sources of friction and making everyday tasks faster and easier.",
+    "desc": "JSON Tool is a small but highly practical utility that converts lists into properly formatted JSON...",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "utility",
+      "status": "complete",
+      "version": "1.0.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "Rock, Paper, Scissors Free-For-All",
     "subtitle": "Emulating RPS FFA dynamics",
-    "desc": "RPS FFA is a visual simulation of Rock Paper Scissors played as a free-for-all, where emoji rocks, papers, and scissors move and interact in a bounded area, transforming each other on collision until only one type remains. Built with HTML, CSS, and JavaScript, it explores emergent behavior, simple rules, and visual feedback, demonstrating how complexity can arise from basic logic and serving as a playful example of systems thinking and real-time animation.",
+    "desc": "RPS FFA is a visual simulation of Rock Paper Scissors played as a free-for-all...",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "simulation",
+      "status": "complete",
+      "version": "1.0.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "Comet Fall",
     "subtitle": "Mobile Arcade Game",
-    "desc": "Comet Fall is a mobile game built with Unity and C#. Players control a comet flying upward through space, latching onto planets to maintain momentum and progress. The challenge lies in timing and positioning—collide incorrectly or fall off the screen, and the game ends. Difficulty ramps as players ascend and planetary patterns become more complex. The project focused on game feel, progression, and responsiveness, requiring careful physics tuning and mobile optimization. Comet Fall demonstrates my ability to design and ship complete interactive systems, from core mechanics to visuals and user feedback.",
+    "desc": "Comet Fall is a fast paced 2D mobile game where players control a drifting comet...",
     "stack": ["C#", "Unity", "Photoshop"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Jun 2021",
+    "updated": "Aug 2021",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/Comet_Fall_1.png",
+    "project-info": {
+      "type": "game",
+      "status": "archived",
+      "version": "1.0.0"
+    },
     "images": [
       "img/Comet_Fall_1.png",
-      "img/Comet_Fall_2.png"
+      "img/Comet_Fall_2.JPG"
     ]
   },
   {
     "title": "Colour Removal Tool",
     "subtitle": "Remove specific colors from images",
-    "desc": "Color Remover is a web-based tool that lets users remove specific colors from an image. Users can select target colors and adjust thresholds to fine-tune results, making it easy to isolate or eliminate unwanted elements. Built with HTML, CSS, and JavaScript, the tool performs image processing entirely in the browser for instant feedback and privacy. It is optimized for speed and responsiveness, with transparency previews and precise control. Designed for designers, developers, and hobbyists, it provides fast, focused edits without the overhead of heavier tools, using efficient canvas APIs for real-time updates.",
+    "desc": "Color Remover is a web-based tool that lets users remove specific colors from an image...",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "utility",
+      "status": "complete",
+      "version": "1.0.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "Task Manager",
     "subtitle": "A Manager to Combat Parkinson's Law",
-    "desc": "This task manager is designed around Parkinson’s Law: tasks expand to fill the time given. It helps users create tasks, assign realistic timeframes, and track completion, encouraging focused work and making time a visible, manageable resource. Built with HTML, CSS, and JavaScript, it blends behavioral psychology with software design to provide clear feedback, accountability, and actionable insights, guiding smarter decisions and making routines more predictable and purposeful.",
+    "desc": "This task manager is designed around Parkinson’s Law: tasks expand to fill the time given...",
     "stack": ["React", "TailwindCSS", "JSX/Javascript"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/Task_Manager_1.png",
+    "project-info": {
+      "type": "productivity",
+      "status": "demo",
+      "version": "0.4.0"
+    },
     "images": [
       "img/Task_Manager_1.png",
       "img/Task_Manager_2.png"
@@ -155,116 +304,190 @@
   {
     "title": "Typing Analyzer",
     "subtitle": "Typing Performance Analyzer",
-    "desc": "Typing Analyzer is a typing test and analysis tool that goes beyond basic WPM metrics. It tracks raw speed, error patterns, commonly missed letters, and tricky word structures to provide a complete picture of typing performance. The app then generates targeted practice lists based on actual weaknesses. It can also run passively in the background to analyze typing behavior outside of structured tests, giving users actionable insights over time. Built as a performance-focused application with HTML, CSS, and JavaScript, it emphasizes accuracy and improvement over vanity metrics. Every design decision—from data collection to privacy safeguards—was made to ensure feedback is meaningful and useful. Typing Analyzer reflects my interest in feedback loops and self-improvement tools. The goal is not just to measure performance, but to help users improve in a measurable, intentional way. Good data should guide better habits, not just inform.",
+    "desc": "Typing Analyzer is a typing test and analysis tool that goes beyond basic WPM metrics...",
     "stack": ["Java", "JSON"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "analysis",
+      "status": "complete",
+      "version": "1.0.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "Drone Simulator",
     "subtitle": "Simulating FPV Drone Flight",
-    "desc": "Drone is an FPV drone simulation game built with Unity and C#. It includes tutorials, free play, challenge courses, and time trials designed to gradually teach flight mechanics while keeping the experience fun. The goal was to create a flight experience that is realistic yet accessible. Players learn controls step by step and then apply skills in increasingly complex environments. The project required detailed physics tuning, responsive camera controls, and precise input handling, balancing technical fidelity with usability. Drone demonstrates my ability to build simulation-style experiences that appeal to both beginners and experienced players. The game also has potential applications in training, education, and esports-style challenges, showing how interactive systems can be both fun and functional.",
+    "desc": "Drone is an FPV drone simulation game built with Unity and C#...",
     "stack": ["C#", "Unity"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/FPV_Simulator_1.png",
+    "project-info": {
+      "type": "simulation",
+      "status": "complete",
+      "version": "1.0.0"
+    },
     "images": [
       "img/FPV_Simulator_1.png",
-      "img/FPV_Simulator_2.png",
       "img/FPV_Simulator_3.png"
     ]
   },
   {
     "title": "Mekorama Prototype",
     "subtitle": "Mobile Puzzle Game (Prototype)",
-    "desc": "Mekorama Prototype is a Unity and C# project inspired by Mekorama, where players rotate and manipulate the environment to guide a character from point A to B, focusing on spatial reasoning and creative problem solving through environmental interaction rather than direct control.",
+    "desc": "Mekorama Prototype is a Unity and C# project inspired by Mekorama...",
     "stack": ["C#", "Unity"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "game",
+      "status": "prototype",
+      "version": "0.2.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "Good Ol' Hockey Game",
     "subtitle": "Hockey Game Jam",
-    "desc": "Good Ol' Hockey Game is a two-day Unity/C# game jam project: a fast-paced, arcade-style 3v3 hockey game with two-player and CPU modes, unpredictable power-ups, and chaotic fan-thrown items, built for maximum momentum and fun under tight constraints.",
+    "desc": "Good Ol' Hockey Game is a two-day Unity/C# game jam project...",
     "stack": ["C#", "Unity"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
-    "images": [
-      "img/Good_Ol_Hockey_Game_1.png"
-    ]
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/GoodOlHockeyGame.JPG",
+    "project-info": {
+      "type": "game",
+      "status": "complete",
+      "version": "1.0.0"
+    },
+    "images": ["img/GoodOlHockeyGame.JPG"]
   },
   {
     "title": "InfoSwap",
     "subtitle": "Exchange Contact Information Instantly",
-    "desc": "InfoSwap is an iPhone app built with Swift that lets users share digital business cards using RFID. Shared cards stay current because users can update their information remotely, ensuring connections remain accurate over time. The project began as a simple way to exchange PSN usernames without spelling them out, then evolved into a professional networking tool. Reliability and trust were central, requiring careful hardware integration, secure data handling, and smooth user experience design. InfoSwap reflects my ability to identify everyday friction and scale solutions beyond their original use case. It bridges physical interaction and digital convenience, turning a small problem—sharing contact info—into a seamless, professional experience.",
+    "desc": "InfoSwap is an iPhone app built with Swift that lets users share digital business cards using RFID...",
     "stack": ["Swift", "Firebase"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "mobile",
+      "status": "prototype",
+      "version": "0.3.0"
+    },
     "images": [
       "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
-    ]
-  },
-  {
-    "title": "Typing Analyzer",
-    "subtitle": "Typing Performance Analyzer",
-    "desc": "Typing Analyzer is a typing test and analysis tool that goes beyond basic WPM metrics. It tracks raw speed, error patterns, commonly missed letters, and tricky word structures to provide a complete picture of typing performance. The app then generates targeted practice lists based on actual weaknesses. It can also run passively in the background to analyze typing behavior outside of structured tests, giving users actionable insights over time. Built as a performance-focused application with HTML, CSS, and JavaScript, it emphasizes accuracy and improvement over vanity metrics. Every design decision—from data collection to privacy safeguards—was made to ensure feedback is meaningful and useful. Typing Analyzer reflects my interest in feedback loops and self-improvement tools. The goal is not just to measure performance, but to help users improve in a measurable, intentional way. Good data should guide better habits, not just inform.",
-    "stack": ["Java", "JSON"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
-    "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
     ]
   },
   {
     "title": "USB Password Keeper",
     "subtitle": "Physical Secure Password Storage",
-    "desc": "USB Password Keeper is a Python-based tool for storing encrypted passwords on a physical USB drive. Access is restricted to the correct software handshake between the USB and host system, ensuring data remains inaccessible if the USB is removed or used on an unrecognized device. The project avoids cloud storage, prioritizing local control and security through encryption, authentication, and secure execution environments.",
+    "desc": "USB Password Keeper is a Python-based tool for storing encrypted passwords on a physical USB drive...",
     "stack": ["Python", "Encryption"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "security",
+      "status": "internal",
+      "version": "0.1.0"
+    },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg"
     ]
   },
   {
-    "title": "Lorcana Card Scanner",
+    "title": "Lorcana Card Management",
     "subtitle": "AI Card Recognition & Database",
-    "desc": "Lorcana Scanner is a web application that uses a ResNet-based model to recognize Lorcana cards through a webcam, allowing users to instantly add recognized cards to a managed collection, organize, search, build decks, and receive deck suggestions based on owned cards. Collections are interactive, with import/export, search, and gap-highlighting features. Built with Python and React, it combines machine learning, computer vision, and front-end engineering to deliver an intuitive, AI-powered experience for managing and enhancing card collections.",
-    "stack": ["Python", "React", "Django"],
+    "desc": "The Lorcana Collection Manager is a full stack web application designed to help players scan, organize, and build decks...",
+    "stack": ["Fullstack", "React", "Django"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Lead Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "flagship",
+      "status": "active",
+      "version": "1.0.0"
+    },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg"
     ]
   },
   {
     "title": "Evvents (24)",
     "subtitle": "Social App for Live Events",
-    "desc": "Evvents (24) is a social app designed around shared experiences at live events, allowing people to plan meet-ups, connect with others attending the same event, and feel present even when engaging remotely. Users can share stories, videos, and photos tied to specific events, creating a live communal feed that feels like being part of the action in real time. Achievements and digital stamps commemorate attendance, giving events a sense of memory and continuity. Each event becomes its own space for interaction, discovery, and connection, encouraging organic meet-ups and shared context whether users are present or following online. Evvents (24) reflects my interest in building community-driven platforms that blend media, identity, and real-world interaction, turning events into shared digital experiences.",
+    "desc": "Evvents (24) is a social app designed around shared experiences at live events...",
     "stack": ["Swift", "Firebase"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
+    "project-info": {
+      "type": "social",
+      "status": "prototype",
+      "version": "0.3.0"
+    },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=1600&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1600&auto=format&fit=crop"
+      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg"
+    ]
+  },
+  {
+    "title": "Example Coming Soon Project",
+    "subtitle": "This is a placeholder for a project in development",
+    "desc": "Project description goes here...",
+    "stack": ["Python", "React"],
+    "started": "Feb 2026",
+    "updated": "Feb 2026",
+    "status": "Coming Soon",
+    "images": [
+      "img/placeholder.jpg"
+    ]
+  },
+  {
+    "title": "Example Importing Soon Project",
+    "subtitle": "This project is being imported from another platform",
+    "desc": "Details about the import process...",
+    "stack": ["JavaScript", "Node.js"],
+    "started": "Jan 2026",
+    "updated": "Feb 2026",
+    "status": "Importing Soon",
+    "images": [
+      "img/another_placeholder.jpg"
     ]
   }
 ]
