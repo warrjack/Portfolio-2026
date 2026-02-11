@@ -7,8 +7,8 @@
     "started": "Aug 2024",
     "updated": "Dec 2024",
     "role": "Solo Developer",
-    "live_demo": "https://finance-planner-2024.netlify.app/",
-    "github": "https://github.com/warrjack/finance-planner",
+    "live_demo": "warrjack.github.io/Finance-Planner",
+    "github": "https://github.com/warrjack/Finance-Planner",
     "splash_image": "img/Finance_Planner_1.png",
     "project-info": {
       "type": "personal",
@@ -38,9 +38,9 @@
       "version": "0.2.0"
     },
     "images": [
-      "img/Smart_Path_1.png",
       "img/Smart_Path_2.png",
-      "img/Smart_Path_3.JPG"
+      "img/Smart_Path_3.JPG",
+      "img/project-content/TSP_Solver_3.png"
     ]
   },
   {
@@ -57,7 +57,7 @@
     "project-info": {
       "type": "experimental",
       "status": "demo",
-      "version": "0.4.0"
+      "version": "1.0.0"
     },
     "images": [
       "img/Quizlet_Remake_1.png",
@@ -70,8 +70,8 @@
     "subtitle": "Create a network of Instagram bot accounts",
     "desc": "An experimental automation project exploring large-scale account management, scripting, and system coordination.",
     "stack": ["Python", "Javascript"],
-    "started": "Mar 2021",
-    "updated": "May 2022",
+    "started": "Mar 2019",
+    "updated": "Sep 2019",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
@@ -79,7 +79,7 @@
     "project-info": {
       "type": "experimental",
       "status": "archived",
-      "version": "1.0.0"
+      "version": "1.2.0"
     },
     "images": ["img/Bot_Farm_1.png"]
   },
@@ -88,16 +88,16 @@
     "subtitle": "Simulating Ant Colony Behavior",
     "desc": "This Unity project is a simple 2D simulation inspired by how ants forage in the real world...",
     "stack": ["C#", "Unity"],
-    "started": "Nov 2023",
-    "updated": "Feb 2025",
+    "started": "Sep 2021",
+    "updated": "Feb 2022",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
     "splash_image": "img/Ant_Simulation_1.png",
     "project-info": {
       "type": "educational",
-      "status": "complete",
-      "version": "1.1.0"
+      "status": "lab",
+      "version": "0.4.4"
     },
     "images": [
       "img/Ant_Simulation_1.png",
@@ -118,13 +118,12 @@
     "splash_image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
     "project-info": {
       "type": "utility",
-      "status": "demo",
-      "version": "0.5.0"
+      "status": "complete",
+      "version": "2.1.0"
     },
     "images": [
-      "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+      "img/project-content/Image_Tracer_1.png",
+      "img/project-content/Image_Tracer_2.png"
     ]
   },
   {
@@ -132,8 +131,8 @@
     "subtitle": "Helping you find the right word",
     "desc": "Wordle Solver is a lightweight web tool...",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Feb 2024",
+    "updated": "Apr 2024",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
@@ -141,12 +140,11 @@
     "project-info": {
       "type": "utility",
       "status": "complete",
-      "version": "1.0.0"
+      "version": "2.1.1"
     },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+      "img/project-content/Wordle_Solver_1.png",
+      "img/project-content/Wordle_Solver_2.png"
     ]
   },
   {
@@ -154,8 +152,8 @@
     "subtitle": "Removing decision fatigue from getting dressed",
     "desc": "Outfit Picker is a React-based application designed to take the stress out of choosing what to wear...",
     "stack": ["React", "Django", "TailwindCSS", "RestAPI"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Dec 2025",
+    "updated": "Dec 2025",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
@@ -176,8 +174,8 @@
     "subtitle": "Number Strategy Game",
     "desc": "Number Game is a deceptively simple web game where players must place randomly generated numbers...",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Jul 2023",
+    "updated": "Jul 2023",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
@@ -188,9 +186,8 @@
       "version": "1.0.0"
     },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+      "img/project-content/Number_Game_1.png",
+      "img/project-content/Number_Game_2.png"
     ]
   },
   {
@@ -198,8 +195,8 @@
     "subtitle": "Turn lists in to JSON data",
     "desc": "JSON Tool is a small but highly practical utility that converts lists into properly formatted JSON...",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "May 2019",
+    "updated": "May 2019",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
@@ -220,8 +217,8 @@
     "subtitle": "Emulating RPS FFA dynamics",
     "desc": "RPS FFA is a visual simulation of Rock Paper Scissors played as a free-for-all...",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Feb 2024",
+    "updated": "Mar 2024",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
@@ -263,8 +260,8 @@
     "subtitle": "Remove specific colors from images",
     "desc": "Color Remover is a web-based tool that lets users remove specific colors from an image...",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Jul 2022",
+    "updated": "Jul 2022",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
@@ -389,9 +386,9 @@
     "subtitle": "Exchange Contact Information Instantly",
     "desc": "InfoSwap is an iPhone app built with Swift that lets users share digital business cards using RFID...",
     "stack": ["Swift", "Firebase"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
-    "role": "Solo Developer",
+    "started": "Mar 2014",
+    "updated": "Oct 2016",
+    "role": "Lead Developer",
     "live_demo": null,
     "github": null,
     "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
@@ -401,9 +398,8 @@
       "version": "0.3.0"
     },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+      "img/project-content/InfoSwap_1.png",
+      "img/project-content/InfoSwap_2.png"
     ]
   },
   {
@@ -431,9 +427,9 @@
     "subtitle": "AI Card Recognition & Database",
     "desc": "The Lorcana Collection Manager is a full stack web application designed to help players scan, organize, and build decks...",
     "stack": ["Fullstack", "React", "Django", "PyTorch", "OpenCV", "TailwindCSS", "RestAPI"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
-    "role": "Lead Developer",
+    "started": "Apr 2025",
+    "updated": "Jan 2026",
+    "role": "Solo Developer",
     "live_demo": null,
     "github": null,
     "splash_image": "img/Disney_Lorcana_1.jpg",
@@ -443,7 +439,10 @@
       "version": "1.0.0"
     },
     "images": [
-      "img/Disney_Lorcana_1.jpg"
+      "img/project-content/Lorcana_Scanner_1.png",
+      "img/project-content/Lorcana_Scanner_2.png",
+      "img/project-content/Lorcana_Scanner_3.png",
+      "img/project-content/Lorcana_Scanner_4.png"
     ]
   },
   {
@@ -451,9 +450,9 @@
     "subtitle": "Social App for Live Events",
     "desc": "Evvents (24) is a social app designed around shared experiences at live events...",
     "stack": ["Swift", "Firebase"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
-    "role": "Solo Developer",
+    "started": "Feb 2016",
+    "updated": "Oct 2017",
+    "role": "Lead Developer",
     "live_demo": null,
     "github": null,
     "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
@@ -463,7 +462,11 @@
       "version": "0.3.0"
     },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg"
+      "img/project-content/24_1.png",
+      "img/project-content/24_2.png",
+      "img/project-content/24_3.png",
+      "img/project-content/24_4.png"
+
     ]
   },
   {
