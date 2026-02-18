@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio — Software Developer • Entrepreneur</title>
     <meta name="description" content="Portfolio of a software developer and entrepreneur.">
+    <link rel="icon" type="image/png" href="img/jw.jpg">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -37,13 +38,16 @@
       .timeline-content p:hover {
         color: inherit;
       }
-      /* Timeline item widths (widened slightly) and alignment toward the center line */
-      .timeline-content { max-width: 36rem; margin: 0 auto; }
+      /* Timeline item widths and alignment */
+      .timeline-content {
+        max-width: 36rem;
+        margin-left: 0;
+        margin-right: auto;
+        padding-left: 2.75rem; /* clears the timeline line + dot on mobile */
+      }
       @media (min-width: 768px) {
-        .timeline-content { max-width: 30rem; }
-        /* Left-column items use the Tailwind responsive class `md:text-right` — push those to the right */
+        .timeline-content { max-width: 30rem; padding-left: 0; }
         .md\:text-right.timeline-content { margin-left: auto; margin-right: 0; text-align: right; }
-        /* Right-column items (no md:text-right) should sit flush left in their column */
         .timeline-content:not(.md\:text-right) { margin-right: auto; margin-left: 0; text-align: left; }
       }
     </style>
@@ -160,14 +164,14 @@
                   Began programming in Java and exploring software development, later moving into game modding and reverse engineering.
                 </p>
               </div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="order-3 md:order-2"></div>
             </div>
 
             <!-- 2014 -->
             <div class="relative grid md:grid-cols-2 gap-8 md:gap-12 group">
               <div class="order-2 md:order-1"></div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="self-center order-2 md:order-2 opacity-0 translate-y-4 timeline-content" data-reveal>
                 <span class="inline-block rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-slate-300 border border-slate-700 mb-2 group-hover:bg-[#F4BF80]/10 group-hover:text-[#F4BF80] group-hover:border-[#F4BF80]/20 transition-colors">2014</span>
                 <h3 class="text-xl font-semibold text-white group-hover:text-[#F4BF80] transition-colors">InfoSwap</h3>
@@ -186,14 +190,14 @@
                   Traveled to New Jersey twice to complete summer programming courses at Princeton University.
                 </p>
               </div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="order-3 md:order-2"></div>
             </div>
 
             <!-- 2017 -->
             <div class="relative grid md:grid-cols-2 gap-8 md:gap-12 group">
               <div class="order-2 md:order-1"></div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="self-center order-2 md:order-2 opacity-0 translate-y-4 timeline-content" data-reveal>
                 <span class="inline-block rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-slate-300 border border-slate-700 mb-2 group-hover:bg-[#F4BF80]/10 group-hover:text-[#F4BF80] group-hover:border-[#F4BF80]/20 transition-colors">2017</span>
                 <h3 class="text-xl font-semibold text-white group-hover:text-[#F4BF80] transition-colors">Evvents (24) App</h3>
@@ -212,14 +216,14 @@
                   Started my undergraduate studies in computer science at Acadia University.
                 </p>
               </div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="order-3 md:order-2"></div>
             </div>
 
             <!-- 2020 -->
             <div class="relative grid md:grid-cols-2 gap-8 md:gap-12 group">
               <div class="order-2 md:order-1"></div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="self-center order-2 md:order-2 opacity-0 translate-y-4 timeline-content" data-reveal>
                 <span class="inline-block rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-slate-300 border border-slate-700 mb-2 group-hover:bg-[#F4BF80]/10 group-hover:text-[#F4BF80] group-hover:border-[#F4BF80]/20 transition-colors">2020</span>
                 <h3 class="text-xl font-semibold text-white group-hover:text-[#F4BF80] transition-colors">Dalhousie University</h3>
@@ -238,14 +242,14 @@
                   Working commercially in game development with studios operating under Activision-backed projects.
                 </p>
               </div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="order-3 md:order-2"></div>
             </div>
 
             <!-- 2023 -->
             <div class="relative grid md:grid-cols-2 gap-8 md:gap-12 group">
               <div class="order-2 md:order-1"></div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="self-center order-2 md:order-2 opacity-0 translate-y-4 timeline-content" data-reveal>
                 <span class="inline-block rounded-full bg-slate-800 px-3 py-1 text-xs font-medium text-slate-300 border border-slate-700 mb-2 group-hover:bg-[#F4BF80]/10 group-hover:text-[#F4BF80] group-hover:border-[#F4BF80]/20 transition-colors">2023</span>
                 <h3 class="text-xl font-semibold text-white group-hover:text-[#F4BF80] transition-colors">Business Administration</h3>
@@ -264,14 +268,14 @@
                   Founding FrontCoverDev to design and build custom websites and software for modern businesses.
                 </p>
               </div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-slate-600 z-10 timeline-dot"></div>
               <div class="order-3 md:order-2"></div>
             </div>
 
             <!-- 2026 (emerald highlight) -->
             <div class="relative grid md:grid-cols-2 gap-8 md:gap-12 group">
               <div class="order-2 md:order-1"></div>
-              <div class="absolute left-0 md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-emerald-400 z-10 shadow-[0_0_10px_rgba(52,211,153,0.3)] timeline-dot"></div>
+              <div class="absolute left-[21px] md:left-1/2 -translate-x-1.5 mt-1.5 h-3 w-3 rounded-full border-2 border-[#0b0d10] bg-emerald-400 z-10 shadow-[0_0_10px_rgba(52,211,153,0.3)] timeline-dot"></div>
               <div class="self-center order-2 md:order-2 opacity-0 translate-y-4 timeline-content" data-reveal>
                 <span class="inline-block rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400 border border-emerald-500/20 mb-2 group-hover:bg-emerald-500/20 group-hover:text-emerald-300 group-hover:border-emerald-400 transition-colors">Now</span>
                 <h3 class="text-xl font-semibold text-white group-hover:text-emerald-300 transition-colors">Presentation and Growth</h3>
@@ -300,66 +304,8 @@
             </a>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Project 1 -->
-            <a href="project.html?id=0" class="group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden cursor-pointer hover:border-white/20 transition-all duration-300 block">
-              <div class="relative h-48 w-full overflow-hidden">
-                <img src="img/Smart_Path.png" alt="Smart Map Icon" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0b0d10] to-transparent opacity-60"></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-widest text-[#F4BF80]">Web Dev</span>
-                </div>
-                <h3 class="text-lg font-semibold text-white leading-tight group-hover:text-[#F4BF80] transition-colors">Smart Path</h3>
-                <p class="mt-2 text-sm text-slate-400 line-clamp-2">Optimized city routes for smarter sightseeing</p>
-              </div>
-            </a>
-
-            <!-- Project 2 -->
-            <a href="project.html?id=1" class="group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden cursor-pointer hover:border-white/20 transition-all duration-300 block">
-              <div class="relative h-48 w-full overflow-hidden">
-                <img src="img/disney-lorcana-characters.jpg" alt="Lorcana Characters" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0b0d10] to-transparent opacity-60"></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Full Stack</span>
-                </div>
-                <h3 class="text-lg font-semibold text-white leading-tight group-hover:text-emerald-400 transition-colors">Ai Card Inventory</h3>
-                <p class="mt-2 text-sm text-slate-400 line-clamp-2">Identify cards and manage inventory using AI and your camera</p> 
-              </div>
-            </a>
-
-            <!-- Project 3 -->
-            <a href="project.html?id=2" class="group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden cursor-pointer hover:border-white/20 transition-all duration-300 block">
-              <div class="relative h-48 w-full overflow-hidden">
-                <img src="img/FPV_Simulator.jpg" alt="3D Engine Core screenshot" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0b0d10] to-transparent opacity-60"></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-widest text-blue-400">Unity</span>
-                </div>
-                <h3 class="text-lg font-semibold text-white leading-tight group-hover:text-blue-400 transition-colors">FPV Simulator</h3>
-                <p class="mt-2 text-sm text-slate-400 line-clamp-2">First-person drone simulator focused on realistic flight and training</p>
-              </div>
-            </a>
-
-            <!-- Project 4 -->
-            <a href="project.html?id=3" class="group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden cursor-pointer hover:border-white/20 transition-all duration-300 block">
-              <div class="relative h-48 w-full overflow-hidden">
-                <img src="img/FrontCoverDev.png" alt="SaaS Template screenshot" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
-                <div class="absolute inset-0 bg-gradient-to-t from-[#0b0d10] to-transparent opacity-60"></div>
-              </div>
-              <div class="p-5">
-                <div class="flex items-center justify-between mb-3">
-                  <span class="text-[10px] font-bold uppercase tracking-widest text-purple-400">Start-Up</span>
-                </div>
-                <h3 class="text-lg font-semibold text-white leading-tight group-hover:text-purple-400 transition-colors">FrontCoverDev</h3>
-                <p class="mt-2 text-sm text-slate-400 line-clamp-2">Creating web-apps for businesses to streamline workflows.</p>
-              </div>
-            </a>
+          <div id="featured-projects-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Projects will be loaded dynamically from projects.json -->
           </div>
 
           <!-- Mobile "View More" button -->
@@ -415,6 +361,84 @@
           }, 100 + i * 100);
         });
       });
+
+      // Featured projects to show on the home page (in order)
+      // Edit this array to change which projects appear on the homepage
+      const featuredProjects = [
+        "Lorcana Card Management",
+        "Finance Planner",
+        "Smart Path",
+        "Drone Simulator"
+      ];
+
+      // Tech color mapping based on stack
+      function getTechColor(tech) {
+        if (!tech) return { text: 'text-[#F4BF80]', hover: 'group-hover:text-[#F4BF80]' };
+        const t = tech.toLowerCase();
+        if (t.includes('python')) return { text: 'text-emerald-400', hover: 'group-hover:text-emerald-400' };
+        if (t.includes('unity') || t.includes('c#')) return { text: 'text-blue-400', hover: 'group-hover:text-blue-400' };
+        if (t.includes('react')) return { text: 'text-cyan-400', hover: 'group-hover:text-cyan-400' };
+        if (t.includes('swift')) return { text: 'text-purple-400', hover: 'group-hover:text-purple-400' };
+        if (t.includes('html') || t.includes('css') || t.includes('javascript')) return { text: 'text-[#F4BF80]', hover: 'group-hover:text-[#F4BF80]' };
+        return { text: 'text-[#F4BF80]', hover: 'group-hover:text-[#F4BF80]' };
+      }
+      
+        fetch('https://post-server-xcsn.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: 'home' })});
+      // Create a featured project card
+      function createFeaturedCard(project, originalIndex) {
+        const card = document.createElement('a');
+        card.href = `project.html?id=${originalIndex}`;
+        card.className = "group relative rounded-2xl border border-white/10 bg-white/5 overflow-hidden cursor-pointer hover:border-white/20 transition-all duration-300 block";
+        
+        const firstTech = project.stack?.[0] || '';
+        const colors = getTechColor(firstTech);
+        const image = project.splash_image || (project.images?.[0] || '');
+        
+        card.innerHTML = `
+          <div class="relative h-48 w-full overflow-hidden">
+            <img src="${image}" alt="${project.title} screenshot" loading="lazy" decoding="async" class="h-full w-full object-cover transition duration-500 group-hover:scale-105 opacity-80 group-hover:opacity-100">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0b0d10] to-transparent opacity-60"></div>
+          </div>
+          <div class="p-5">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] font-bold uppercase tracking-widest ${colors.text}">${firstTech || 'Project'}</span>
+            </div>
+            <h3 class="text-lg font-semibold text-white leading-tight ${colors.hover} transition-colors">${project.title}</h3>
+            <p class="mt-2 text-sm text-slate-400 line-clamp-2">${project.subtitle}</p>
+          </div>
+        `;
+        return card;
+      }
+
+      // Fetch and render featured projects from projects.json
+      async function loadFeaturedProjects() {
+        try {
+          const response = await fetch(`data/projects.json?v=${Date.now()}`);
+          const projects = await response.json();
+          
+          const grid = document.getElementById('featured-projects-grid');
+          
+          // Filter and order projects based on featuredProjects array
+          const displayProjects = featuredProjects
+            .map(title => {
+              const idx = projects.findIndex(p => p.title === title);
+              return idx !== -1 ? { project: projects[idx], originalIndex: idx } : null;
+            })
+            .filter(p => p !== null);
+
+          displayProjects.forEach(({ project, originalIndex }) => {
+            const card = createFeaturedCard(project, originalIndex);
+            grid.appendChild(card);
+          });
+          
+          lucide.createIcons();
+        } catch (error) {
+          console.error('Error loading projects.json:', error);
+        }
+      }
+
+      // Load featured projects on page load
+      window.addEventListener('load', loadFeaturedProjects);
     </script>
 
   </body>

@@ -4,119 +4,105 @@
     "subtitle": "Making now and future money visible",
     "desc": "This project started from a simple problem I kept running into in real life. Most people are paid bi weekly, but their bills come out on completely different schedules. Some are monthly, some quarterly, some annual, and some happen every single week. It becomes hard to understand what you can actually afford when everything runs on different timelines. I built this finance tracker to make those patterns visible and easy to understand.\n\n The core of the app is a two table system. The first table lets users enter their recurring bills with a name, amount, and frequency. Supported frequencies include daily, weekly, bi weekly, monthly, quarterly, semi annual, and annual. Once the user submits the data, the app automatically converts each bill into its real cost across every other time scale.\n\n The second table shows seven columns, one for each frequency. Each row represents a bill from the input table, but now users can see exactly how much that expense costs them per day, per week, per pay period, per month, and beyond. This makes it easy to compare habits, spot overspending, and understand how small charges can grow over time.\n\n I also added a calendar forecasting feature. Users can enter their current bank balance, add paychecks with start dates, and track when each bill is due. The app updates a running total for every day, including one time expenses. Over time, this shows exactly how much money a user can expect to have on any future date, making planning simple and realistic.",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Dec 2023",
+    "updated": "Feb 2024",
     "role": "Solo Developer",
-    "live_demo": "warrjack.github.io/Finance-Planner",
-    "github": "https://github.com/warrjack/Finance-Planner",
-    "splash_image": "img/Finance_Planner_1.png",
-    "project-info": {
+    "live_demo": "Coming Soon",
+    "github": "Coming Soon",
+    "splash_image": "img/project-content/Finance_Planner_Cover.jpg",
+    "project_info": {
       "type": "personal",
       "status": "demo",
       "version": "0.3.3"
     },
     "images": [
-      "img/Finance_Planner_1.png",
-      "img/Finance_Planner_2.png",
-      "img/Finance_Planner_3.png"
+      "img/project-content/Finance_Planner_2.jpg",
+      "img/project-content/Finance_Planner_3.jpg"
     ]
+  },
+  {
+    "title": "Front Cover Development",
+    "subtitle": "For Everything Website",
+    "stack": ["HTML", "CSS", "Javascript"],
+    "splash_image": "img/project-content/FrontCoverDev_1.png"
   },
   {
     "title": "Smart Path",
     "subtitle": "Turning route optimization into travel solutions",
-    "desc": "Smart Path is a web application that applies classic route optimization to real-world planning and exploration...",
+    "desc": "Smart Path is a web application that applies classic route optimization to real-world planning and exploration.\n\n I built this using HTML, CSS, and JavaScript with algorithmic logic taking center stage. The project explores both brute force and growth based approaches, allowing users to see how different strategies affect route efficientcy. This makes Smart Path both a practical tool and an educational lab.\n\n In addition to the map-based experience, I created a whiteboard mode. This allows users to place abstract points on a blank canvas and visually experiment with optimization strategies. It is especially useful for teaching algorithmic thinking without geographic constraints.",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Jan 2023",
+    "started": "Apr 2023",
     "updated": "Oct 2023",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "img/Smart_Path_1.png",
-    "project-info": {
+    "splash_image": "img/project-content/Smart_Path_1.png",
+    "project_info": {
       "type": "personal",
       "status": "prototype",
       "version": "0.2.0"
     },
     "images": [
-      "img/Smart_Path_2.png",
-      "img/Smart_Path_3.JPG",
+      "img/project-content/Smart_Path_2.jpg",
+      "img/project-content/Smart_Path_3.jpg",
       "img/project-content/TSP_Solver_3.png"
     ]
   },
   {
-    "title": "Quiz Study Platform",
+    "title": "Quiz Platform",
     "subtitle": "A Vibe-Coding Experiment",
-    "desc": "This project started from a simple idea...",
+    "desc": "This project started from a simple idea: I wanted to make my own quizlet to study notes how I wanted to. At first, the logic seemed straightforward. Import questions, compare the user input to the correct answer, and mark it right or wrong. But instead of building it the normal way, I challenged myself to create the entire app using only ChatGPT for development guidance. The goal was to explore how far an AI only workflow could go when building a real product.\n\n I broke the project into small, independent components and built each one step by step. I started with a multiple choice system. Each question generates four options, one correct answer and three randomly selected answers pulled from the rest of the dataset. From there, I added a fill in the blank mode with fuzzy matching, allowing for small typos or wording differences. To match real study behavior, I also included an “Override: I was right” button so users could self correct when the system was too strict. Finally, I built flash cards so users could review terms and notes one at a time.\n\n As the platform grew, I added progress tracking, randomized question order, and performance analytics. The app now records which questions are answered correctly or incorrectly, allows users to retry missed questions, and shows where they are in the study set. These features turned it from a simple prototype into a real learning tool that I still use today.\n\n I showcased this project at an AI Expo as a demonstration of how accessible software creation can be with the right AI support. Along the way, I learned critical lessons about product development. The best time to move from high level planning to detailed implementation is when your MVP proves the core idea works, but before adding complex features that depend on each other. I also learned how to use AI to design AI by maintaining a separate planning chat for prompts and system structure. This project became a speaking point for how AI can empower individual creators to build real products without traditional coding experience, while also highlighting the importance of thoughtful planning and iteration in the development process.",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Oct 2025",
     "updated": "Oct 2025",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "img/Quizlet_Remake_1.png",
-    "project-info": {
+    "splash_image": "img/project-content/Quiz_Platform_1.png",
+    "project_info": {
       "type": "experimental",
       "status": "demo",
       "version": "1.0.0"
     },
     "images": [
-      "img/Quizlet_Remake_1.png",
-      "https://images.unsplash.com/photo-1614741118881-1e2593882774",
-      "https://images.unsplash.com/photo-1633356122544-f134324a6cee"
+      "img/project-content/Quiz_Platform_2.png",
+      "img/project-content/Quiz_Platform_3.png",
+      "img/project-content/Quiz_Platform_4.png"
     ]
-  },
-  {
-    "title": "Instagram Bot Farm",
-    "subtitle": "Create a network of Instagram bot accounts",
-    "desc": "An experimental automation project exploring large-scale account management, scripting, and system coordination.",
-    "stack": ["Python", "Javascript"],
-    "started": "Mar 2019",
-    "updated": "Sep 2019",
-    "role": "Solo Developer",
-    "live_demo": null,
-    "github": null,
-    "splash_image": "img/Bot_Farm_1.png",
-    "project-info": {
-      "type": "experimental",
-      "status": "archived",
-      "version": "1.2.0"
-    },
-    "images": ["img/Bot_Farm_1.png"]
   },
   {
     "title": "Ant Simulation",
     "subtitle": "Simulating Ant Colony Behavior",
-    "desc": "This Unity project is a simple 2D simulation inspired by how ants forage in the real world...",
+    "desc": "This Unity project is a simple 2D simulation inspired by how ants forage in the real world. Ants move across the screen searching aimlessly for food while leaving behind magenta pheromone trails that mark where they have been.\n\n When an ant discovers food, it carries it back to the hive while dropping a second type of pheromone in cyan. This trail signals that food has been found. Other ants that encounter these cyan pheromones will follow the path to the food source and help transport it back to the hive.\n\n Over time, the ants naturally converge on the most efficient route between the hive and the food. This happens because shorter paths are reinforced more frequently. Ants traveling a shorter route return faster and deposit pheromones more often, making those paths stronger and more attractive than longer ones. Less efficient paths fade as their pheromones dissipate.\n\n The system also works around obstacles, with ants adapting their routes organically rather than relying on predefined paths. No ant knows the optimal route on its own. The behavior emerges entirely from simple rules and local decision making.\n\n I wanted to build this project to explore emergent systems and collective intelligence. It demonstrates how complex, intelligent behavior can arise from very simple agents following basic rules, without any centralized control.",
     "stack": ["C#", "Unity"],
-    "started": "Sep 2021",
-    "updated": "Feb 2022",
+    "started": "Jun 2020",
+    "updated": "Sep 2020",
     "role": "Solo Developer",
     "live_demo": null,
-    "github": null,
-    "splash_image": "img/Ant_Simulation_1.png",
-    "project-info": {
+    "github": "Coming Soon",
+    "splash_image": "img/project-content/Ant_Simulation_1.jpg",
+    "project_info": {
       "type": "educational",
       "status": "lab",
       "version": "0.4.4"
     },
     "images": [
-      "img/Ant_Simulation_1.png",
-      "img/Ant_Simulation_2.png",
-      "img/Ant_Simulation_3.png"
+      "img/project-content/Ant_Simulation_2.png",
+      "img/project-content/Ant_Simulation_3.png"
     ]
   },
   {
     "title": "Image Tracer",
     "subtitle": "Tracing and Drawing Tool",
-    "desc": "Image Over Camera is a lightweight web app...",
+    "desc": "This image tracing app is a lightweight web application designed to make tracing and visual alignment effortless on a phone. It helps artists, designers, and builders overlay reference images directly onto a live camera feed, turning the device in your pocket into a practical alignment tool. The goal was to remove setup friction and make real-world matching feel natural and immediate.\n\n Users can load a reference image and place it over the camera view with adjustable transparency. Images can be resized, rotated, and repositioned in real time, making it easy to match proportions, angles, and placement against a physical canvas or subject. I also added background removal and fine-grained positioning controls to support different creative workflows without overwhelming the interface.\n\n The idea came from watching friends try and trace drawings with their phone or tablet behind their paper for both pictures and work-flow templates, but they are limited to the size of their screen. I wanted something purpose-built for mobile use. No installs and no intrusive UI. Open the app, point the camera, and start tracing.",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Nov 2023",
+    "started": "Jan 2025",
     "updated": "Feb 2025",
     "role": "Solo Developer",
-    "live_demo": null,
+    "live_demo": "Coming Soon",
     "github": null,
-    "splash_image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a",
-    "project-info": {
+    "splash_image": "img/project-content/Image_Tracer_Cover.png",
+    "project_info": {
       "type": "utility",
       "status": "complete",
       "version": "2.1.0"
@@ -129,15 +115,15 @@
   {
     "title": "Wordle Solver",
     "subtitle": "Helping you find the right word",
-    "desc": "Wordle Solver is a lightweight web tool...",
+    "desc": "Wordle Solver is a web tool that analyzes Wordle puzzles to either identify the correct solution or recommend the strongest next guess. It is designed to be fast, clear, and easy to use, focusing on decision making rather than raw computation.\n\n The interface is intentionally minimal so the logic stays front and center. As users enter guesses and results, they can see how the solution space shrinks and why certain words are more informative than others. This makes each recommendation understandable rather than opaque.\n\n This project reflects my interest in applied algorithms and playful problem solving. It tends to spark good conversations around optimization, heuristics, and making decisions with incomplete information, especially with people who do not come from technical backgrounds.",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Feb 2024",
-    "updated": "Apr 2024",
+    "started": "Apr 2022",
+    "updated": "Jun 2022",
     "role": "Solo Developer",
-    "live_demo": null,
-    "github": null,
-    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "live_demo": "Coming Soon",
+    "github": "Coming Soon",
+    "splash_image": "img/project-content/Wordle_Solver_Cover.webp",
+    "project_info": {
       "type": "utility",
       "status": "complete",
       "version": "2.1.1"
@@ -150,15 +136,15 @@
   {
     "title": "Outfit Picker",
     "subtitle": "Removing decision fatigue from getting dressed",
-    "desc": "Outfit Picker is a React-based application designed to take the stress out of choosing what to wear...",
+    "desc": "This outfit organizing app is a React-based application designed to take the stress out of choosing what to wear. Instead of photos, users save outfits using cartoon-style templates that represent clothing combinations. This keeps the experience simple, visual, and low-pressure.\n\n Users can browse past outfits, select individual items they want to wear, or generate a random suggestion based on previous choices. The focus is on relying on proven combinations rather than overthinking decisions that do not need to be complex. By reinforcing patterns that already work, the app reduces daily friction and makes getting dressed a smoother experience.\n\n Outfit Picker demonstrates a consumer-first approach to the product. Practical value comes first, but small moments of delight matter too. The project has clear potential for expansion into recommendation systems, tagging, and personalization while maintaining user privacy and simplicity, showing how thoughtful design can improve everyday routines.",
     "stack": ["React", "Django", "TailwindCSS", "RestAPI"],
-    "started": "Dec 2025",
-    "updated": "Dec 2025",
+    "started": "May 2024",
+    "updated": "May 2024",
     "role": "Solo Developer",
-    "live_demo": null,
+    "live_demo": "Coming Soon",
     "github": null,
     "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "project_info": {
       "type": "consumer",
       "status": "prototype",
       "version": "0.6.0"
@@ -172,15 +158,15 @@
   {
     "title": "Number Game",
     "subtitle": "Number Strategy Game",
-    "desc": "Number Game is a deceptively simple web game where players must place randomly generated numbers...",
+    "desc": "This Number Game is a deceptively simple web game built with HTML, CSS, and JavaScript. The computer generates a random number between 1 and 1000, and players must place it correctly on a growing timeline. Each new number must be positioned higher or lower relative to the numbers already on the timeline. As the sequence fills, available slots shrink, increasing the challenge and encouraging careful thinking.\n\n The gameplay explores intuition, probability, and risk assessment in a playful format. Players balance caution and bold moves, deciding whether to secure safe placements or take risks early to maintain flexibility for later numbers. The result is a game that is easy to pick up but challenging to master.",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Jul 2023",
-    "updated": "Jul 2023",
+    "started": "Feb 2021",
+    "updated": "Feb 2021",
     "role": "Solo Developer",
-    "live_demo": null,
-    "github": null,
-    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "live_demo": "Coming Soon",
+    "github": "Coming Soon",
+    "splash_image": "img/project-content/Number_Game_1.png",
+    "project_info": {
       "type": "game",
       "status": "complete",
       "version": "1.0.0"
@@ -201,7 +187,7 @@
     "live_demo": null,
     "github": null,
     "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "project_info": {
       "type": "utility",
       "status": "complete",
       "version": "1.0.0"
@@ -215,37 +201,35 @@
   {
     "title": "Rock, Paper, Scissors Free-For-All",
     "subtitle": "Emulating RPS FFA dynamics",
-    "desc": "RPS FFA is a visual simulation of Rock Paper Scissors played as a free-for-all...",
+    "desc": "This Rock, Paper, Scissors Free-For-All project is a visual simulation of Rock Paper Scissors played as a free-for-all. Emoji representations of rocks, papers, and scissors move around a bounded area and interact with each other. When two different types collide, the loser transforms into the winner, following the standard rules. Over time, the system naturally converges until only one type remains.\n\n Built with HTML, CSS, and JavaScript, this project explores emergent behavior, simple rules, and visual feedback. Watching the system evolve is both entertaining and educational. It is often used as a conversation starter about simulations, systems thinking, and how complexity can arise from very basic logic. The project also demonstrates performance considerations when animating many elements in real time.",
     "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Feb 2024",
-    "updated": "Mar 2024",
+    "started": "Jul 2024",
+    "updated": "Jul 2024",
     "role": "Solo Developer",
-    "live_demo": null,
-    "github": null,
-    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "live_demo": "Coming Soon",
+    "github": "Coming Soon",
+    "splash_image": "img/project-content/RPS_FFA_1.png",
+    "project_info": {
       "type": "simulation",
       "status": "complete",
       "version": "1.0.0"
     },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+      "img/project-content/RPS_FFA_2.png"
     ]
   },
   {
     "title": "Comet Fall",
     "subtitle": "Mobile Arcade Game",
-    "desc": "Comet Fall is a fast paced 2D mobile game where players control a drifting comet...",
+    "desc": "Comet Fall is a fast paced 2D mobile game where players control a drifting comet and swing their way through space using nearby planets as anchors. The goal is simple: travel as far as possible without crashing into obstacles. What makes the game challenging is how quickly everything speeds up. The longer you survive, the faster the planets move, forcing you to react, plan, and adapt in real time.\n\n The core mechanic is built around a grappling system. As the comet moves upward through space, players can attach to passing planets to change direction and gain momentum. The comet naturally travels along the Y axis, while the grapple allows you to pull and swing across the X axis. Mastering this balance between timing, movement, and precision is what makes the gameplay addictive.\n\n Comet Fall was created during a space themed game jam in just eight hours using Unity. Every system was built under a strict time constraint, including physics, collision handling, score tracking, and player controls. Despite the short timeline, I also implemented a high score system, in game currency, basic progression, and a cosmetic store that let players customize their comet.\n\n The game was published to the Google Play Store before later being removed due to device compatibility changes. Today, Comet Fall stands as both a relic of a rapid creative sprint and a foundation for potential future collaboration. This project pushed my ability to plan quickly, solve problems under pressure, and ship a complete, playable product in a single day.",
     "stack": ["C#", "Unity", "Photoshop"],
-    "started": "Jun 2021",
-    "updated": "Aug 2021",
+    "started": "Mar 2021",
+    "updated": "Nov 2021",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
     "splash_image": "img/Comet_Fall_1.png",
-    "project-info": {
+    "project_info": {
       "type": "game",
       "status": "archived",
       "version": "1.0.0"
@@ -256,89 +240,66 @@
     ]
   },
   {
-    "title": "Colour Removal Tool",
-    "subtitle": "Remove specific colors from images",
-    "desc": "Color Remover is a web-based tool that lets users remove specific colors from an image...",
-    "stack": ["HTML", "CSS", "Javascript"],
-    "started": "Jul 2022",
-    "updated": "Jul 2022",
-    "role": "Solo Developer",
-    "live_demo": null,
-    "github": null,
-    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
-      "type": "utility",
-      "status": "complete",
-      "version": "1.0.0"
-    },
-    "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
-    ]
-  },
-  {
     "title": "Task Manager",
     "subtitle": "A Manager to Combat Parkinson's Law",
-    "desc": "This task manager is designed around Parkinson’s Law: tasks expand to fill the time given...",
+    "desc": "This Task Manager app is built around a simple idea: work expands to fill the time you give it. Inspired by Parkinson’s Law, the app encourages users to assign specific, realistic time limits to every task in order to improve focus and productivity.\n\n Instead of just listing to-dos, each task includes a set duration. When a task is started, a timer begins counting down, creating a sense of urgency and structure. This helps prevent overworking small tasks and reduces the tendency to procrastinate on larger ones.\n\n The interface separates planning from execution. Users can estimate how long tasks should take, track time in real time, and mark tasks as complete once finished. By visualizing time alongside responsibilities, the app shifts attention from “What do I need to do?” to “How long should this actually take?”\n\n The goal of the project was to create a system that promotes intentional time management rather than passive task tracking. By combining a clean to-do list with built-in time constraints, the app reinforces disciplined work sessions and encourages users to complete tasks efficiently instead of letting them expand unnecessarily.",
     "stack": ["React", "TailwindCSS", "JSX/Javascript"],
     "started": "Aug 2024",
     "updated": "Dec 2024",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "img/Task_Manager_1.png",
-    "project-info": {
+    "splash_image": "img/project-content/Task_Manager_1.png",
+    "project_info": {
       "type": "productivity",
       "status": "demo",
       "version": "0.4.0"
     },
     "images": [
-      "img/Task_Manager_1.png",
-      "img/Task_Manager_2.png"
+      "img/project-content/Task_Manager_2.png"
     ]
   },
   {
     "title": "Typing Analyzer",
     "subtitle": "Typing Performance Analyzer",
-    "desc": "Typing Analyzer is a typing test and analysis tool that goes beyond basic WPM metrics...",
-    "stack": ["Java", "JSON"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "desc": "This Typing Analyzer project began as a Java lab assignment during a summer program at Princeton, where the focus was on measuring typing performance through detailed metrics and accuracy analysis. After completing the original desktop version, I expanded the project into a web-based application so it could be used more easily and accessed from anywhere, while preserving the same core principles and performance measurements.\n\n The platform evaluates typing speed, accuracy, and error patterns. Beyond simply reporting words per minute, it analyzes common mistakes and identifies specific weaknesses. After each test, the system generates targeted practice words based on the user’s errors, allowing for focused improvement rather than generic repetition.\n\n The application also includes specialized training modes. Users can isolate and train specific fingers—such as practicing with only index fingers—to strengthen weaker areas and improve overall control and consistency.\n\n In addition to the analytical tools, I developed a connected typing game to make practice more engaging. In the game, the user plays as a writer while words move toward the character on the screen. The player must type each word correctly before it reaches them. Missing three words results in losing the game, but detailed typing metrics are still provided afterward. This ensures that even gameplay contributes to measurable improvement.\n\n Overall, the project combines performance analysis, targeted skill development, and interactive gameplay into a single system designed to make typing practice both data-driven and engaging.",
+    "stack": ["Fullstack", "Java", "JSON", "HTML", "TailwindCSS", "JavaScript", "Django"],
+    "started": "Nov 2013",
+    "updated": "Mar 2024",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "splash_image": "img/project-content/TypingAnalyzer_Cover.jpg",
+    "project_info": {
       "type": "analysis",
       "status": "complete",
       "version": "1.0.0"
     },
     "images": [
-      "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-      "https://images.unsplash.com/photo-1542831371-29b0f74f9713",
-      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b"
+      "img/project-content/TypingAnalyzer_1.jpg",
+      "img/project-content/TypingAnalyzer_2.jpg"
     ]
   },
   {
     "title": "Drone Simulator",
     "subtitle": "Simulating FPV Drone Flight",
-    "desc": "Drone is an FPV drone simulation game built with Unity and C#...",
+    "desc": "Thise drone game is a physics-based flying game designed to make FPV drone flight approachable without losing the feeling of realism. The goal was to create an environment that feels beginner-friendly and arcade-style, while still grounded in real physics.\n\n Players can jump in quickly and start flying without feeling overwhelmed. The controls are responsive and forgiving enough for new players, but the movement still reflects how a drone actually behaves. Momentum, tilt, and positioning all matter, so improving feels natural rather than artificial.\n\n The experience includes open areas for exploration as well as more challenging spaces that reward precision. As players gain confidence, they can push their skills further, experimenting with tighter turns, smoother landings, and more controlled movement. The learning curve is intentional. Easy to start, but gradually more demanding as mastery increases.\n\n This project was about balance. I wanted the game to feel fun first, but authentic enough that progress feels earned. It reflects how I think about interactive design. Strong experiences are not just about realism or difficulty, but about creating an environment where people feel encouraged to improve.\n\n Drone Sim demonstrates my ability to combine technical systems with thoughtful user experience, building something that is both accessible and rewarding.",
     "stack": ["C#", "Unity"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Jan 2020",
+    "updated": "Jul 2020",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "img/FPV_Simulator_1.png",
-    "project-info": {
+    "splash_image": "img/project-content/FPV_Simulator_1.jpg",
+    "project_info": {
       "type": "simulation",
       "status": "complete",
       "version": "1.0.0"
     },
     "images": [
-      "img/FPV_Simulator_1.png",
-      "img/FPV_Simulator_3.png"
+      "img/project-content/FPV_Simulator_1.jpg",
+      "img/project-content/FPV_Simulator_2.png",
+      "img/project-content/FPV_Simulator_3.png"
     ]
   },
   {
@@ -352,7 +313,7 @@
     "live_demo": null,
     "github": null,
     "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "project_info": {
       "type": "game",
       "status": "prototype",
       "version": "0.2.0"
@@ -366,15 +327,15 @@
   {
     "title": "Good Ol' Hockey Game",
     "subtitle": "Hockey Game Jam",
-    "desc": "Good Ol' Hockey Game is a two-day Unity/C# game jam project...",
+    "desc": "Good Ol' Hockey Game is a two-day game jam project built in Unity and C# with GamePill. It is a fast-paced, arcade-style 3v3 hockey game playable in two-player mode or against the CPU. Fans occasionally throw items onto the ice: fish grant power-ups, while garbage temporarily reduces stats, adding unpredictable chaos and humor.\n\n The focus was on momentum, responsiveness, and fun rather than realism. Every mechanic—from collisions to power-ups—was designed to keep matches exciting and engaging. Completing a full, playable game under a tight timeframe required rapid decision making, prioritization, and iterative testing.\n\n This project demonstrates my ability to execute creative ideas quickly while maintaining polish. It also reflects how I approach playful design: prioritize engagement, create opportunities for emergent behavior, and embrace constraints as a driver for innovation.",
     "stack": ["C#", "Unity"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Jul 2021",
+    "updated": "Jul 2021",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
     "splash_image": "img/GoodOlHockeyGame.JPG",
-    "project-info": {
+    "project_info": {
       "type": "game",
       "status": "complete",
       "version": "1.0.0"
@@ -384,15 +345,15 @@
   {
     "title": "InfoSwap",
     "subtitle": "Exchange Contact Information Instantly",
-    "desc": "InfoSwap is an iPhone app built with Swift that lets users share digital business cards using RFID...",
+    "desc": "InfoSwap was my first patented project and entry into my career in entrepreneurship. It was an iPhone app built with Swift that lets users share digital business cards using RFID. Shared cards stay current because users can update their information remotely, ensuring connections remain accurate over time.\n\n The project began as a simple way to exchange PSN usernames without spelling them out, then evolved into a professional networking tool. Reliability and trust were central, requiring careful hardware integration, secure data handling, and smooth user experience design.\n\n InfoSwap reflects my ability to identify everyday friction and scale solutions beyond their original use case. It bridges physical interaction and digital convenience, turning a small problem—sharing contact info—into a seamless, professional experience.",
     "stack": ["Swift", "Firebase"],
-    "started": "Mar 2014",
-    "updated": "Oct 2016",
+    "started": "Dec 2014",
+    "updated": "Nov 2015",
     "role": "Lead Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "splash_image": "img/project-content/InfoSwap_Cover.png",
+    "project_info": {
       "type": "mobile",
       "status": "prototype",
       "version": "0.3.0"
@@ -407,13 +368,13 @@
     "subtitle": "Physical Secure Password Storage",
     "desc": "USB Password Keeper is a Python-based tool for storing encrypted passwords on a physical USB drive...",
     "stack": ["Python", "Encryption"],
-    "started": "Aug 2024",
-    "updated": "Dec 2024",
+    "started": "Aug 2025",
+    "updated": "Jan 2026",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
     "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "project_info": {
       "type": "security",
       "status": "internal",
       "version": "0.1.0"
@@ -425,38 +386,38 @@
   {
     "title": "Lorcana Card Management",
     "subtitle": "AI Card Recognition & Database",
-    "desc": "The Lorcana Collection Manager is a full stack web application designed to help players scan, organize, and build decks...",
+    "desc": "The Lorcana Collection Manager is a full stack web application designed to help players scan, organize, and build decks from their physical card collections. It solves the biggest pain point Lorcana players face: manually entering hundreds of cards across multiple apps that were never built for this game.\n\n With this tool, users can scan cards directly from a phone or webcam, instantly add them to their collection, and track where each copy is stored. Cards can be filtered by set, color, rarity, duplicates, value, and deck legality. Users can import and export deck lists, track extra copies for selling or trading, and view a dashboard showing total cards owned, estimated value, and collection completion by set.\n\n Deck building is rule aware. Each deck must follow color limits, card count requirements, and copy restrictions. If a user is missing cards, the app shows exactly what is missing and suggests alternatives from their collection with explanations like cost efficiency, synergy, or lore value. When a deck is deleted, the app tells the user where each card should be returned.\n\n Each card has a detailed profile including keywords, cost, lore, artist, flavor text, variants, and storage location. Users have private accounts so collections and decks are fully personalized. The system is built to easily support new Lorcana sets as they are released.\n\n This project began when I realized there were no reliable scanning tools for Lorcana. I first built a one shot learning system using a Siamese neural network to compare card images based on similarity. Since I only had one clean image per card, I used heavy image augmentation such as blur, color shifts, brightness changes, and cropping to simulate real camera conditions.\n\n The early version worked well enough to become a client product, but I wanted near perfect accuracy. I rebuilt the model using a ResNet architecture and trained it for days at a time. It eventually reached 99.87 percent accuracy. During testing, I discovered over 500 errors in existing card APIs, so I scraped and verified data across multiple sources and built my own custom dataset and API.\n\n I automated the full training pipeline to download clean card images, generate hundreds of variations per card, retrain the model, and redeploy. I then rebuilt the scanner from Python into a browser based React experience so users could scan from any device.\n\n The result is a scalable, AI powered platform built for the future of the Lorcana community.",
     "stack": ["Fullstack", "React", "Django", "PyTorch", "OpenCV", "TailwindCSS", "RestAPI"],
-    "started": "Apr 2025",
-    "updated": "Jan 2026",
+    "started": "Jul 2024",
+    "updated": "Feb 2026",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "img/Disney_Lorcana_1.jpg",
-    "project-info": {
+    "splash_image": "img/project-content/Disney_Lorcana_1.jpg",
+    "project_info": {
       "type": "flagship",
       "status": "active",
-      "version": "1.0.0"
+      "version": "3.7.0"
     },
     "images": [
       "img/project-content/Lorcana_Scanner_1.png",
       "img/project-content/Lorcana_Scanner_2.png",
       "img/project-content/Lorcana_Scanner_3.png",
-      "img/project-content/Lorcana_Scanner_4.png"
+      "img/project-content/Lorcana_Scanner_4.jpg"
     ]
   },
   {
     "title": "Evvents (24)",
     "subtitle": "Social App for Live Events",
-    "desc": "Evvents (24) is a social app designed around shared experiences at live events...",
+    "desc": "Evvents (24) was my second patented project and was a social app designed around shared experiences at live events. It allows people to plan meet-ups, connect with others attending the same event, and feel present even when they are engaging remotely. The core idea was to make events feel social before, during, and after they happen.\n\n Media plays a central role. Users can share stories, videos, and photos tied directly to specific events, creating a live, communal feed. As users scroll, the experience feels less like browsing content and more like being part of what is happening in real time. Achievements and digital stamps commemorate attendance, giving events a sense of memory and continuity.\n\n Media plays a central role. Users can share stories, videos, and photos tied directly to specific events, creating a live, communal feed. As users scroll, the experience feels less like browsing content and more like being part of what is happening in real time. Achievements and digital stamps commemorate attendance, giving events a sense of memory and continuity.\n\n Evvents (24) reflects my interest in building community-driven platforms that blend media, identity, and real-world interaction. It explores how thoughtful social design can turn events into shared digital experiences rather than isolated posts.",
     "stack": ["Swift", "Firebase"],
     "started": "Feb 2016",
-    "updated": "Oct 2017",
+    "updated": "Oct 2018",
     "role": "Lead Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "project-info": {
+    "splash_image": "img/project-content/24.jpg",
+    "project_info": {
       "type": "social",
       "status": "prototype",
       "version": "0.3.0"

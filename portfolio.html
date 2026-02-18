@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>All Projects — Portfolio</title>
     <meta name="description" content="All projects from my portfolio.">
+    <link rel="icon" type="image/png" href="img/jw.jpg">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -50,8 +51,8 @@
               <h2 class="text-sm font-semibold text-white tracking-tight">All Projects <span class="ml-2 text-xs font-normal text-slate-500">25 items</span></h2>
             </div>
             <div class="hidden sm:flex items-center gap-2">
-              <div class="h-2 w-2 rounded-full bg-emerald-500"></div>
-              <span class="text-xs text-slate-400">System Online</span>
+              <!--div class="h-2 w-2 rounded-full bg-emerald-500"></div-->
+              <!--span class="text-xs text-slate-400">System Online</span-->
             </div>
           </div>
         </div>
@@ -80,48 +81,37 @@
       // Add or remove project titles from this array to show/hide them
       // The order in this array determines the order they appear on the portfolio page
       const publicProjects = [
-        "Lorcana Card Management",
         "Finance Planner",
+        "Lorcana Card Management",
+        "Drone Simulator",
         "Smart Path",
         "Ant Simulation",
-        "Drone Simulator",
         "Typing Analyzer",
-        "Outfit Picker",
+        //"Outfit Picker",
+        "Front Cover Development",
         "Evvents (24)",
         "InfoSwap"
 
-        //"Quizlet Remake",
-        //"Image Tracer",
-        //"Wordle Solver",
-        //"Outfit Picker",
-        //"Number Game",
         //"JSON Converter",
-        //"Rock, Paper, Scissors Free-For-All",
-        //"Instagram Bot Farm",
         //"Comet Fall",
-        //"Colour Removal Tool",
-        //"Task Manager",
-        //"Mekorama Prototype",
         //"Good Ol' Hockey Game"
         //"InfoSwap",
         //"USB Password Keeper",
-        
-        //"Evvents (24)"
       ];
       const labProjects = [
-        "Quizlet Remake",
-        "Image Tracer",
-        "Colour Removal Tool",
         "Wordle Solver",
-        "Task Manager",
+        "Quiz Platform",
+        "Image Tracer",
         "Number Game",
+        "Task Manager",
         "Rock, Paper, Scissors Free-For-All",
       ];
 
       // Map project titles to external URLs — add more entries here
       const externalLinks = {
         'Instagram Bot Farm': 'https://github.com/warrjack/Instagram-Bot-Farm',
-        'Image Tracer': 'https://warrjack.github.io/Image-Tracer/',
+        'Front Cover Development': 'https://www.frontcoverdev.com/'
+        //'Image Tracer': 'https://warrjack.github.io/Image-Tracer/',
       };
 
       // Helper function to create a project card
@@ -155,6 +145,7 @@
         // If this project's title exists in `externalLinks`, open that URL instead
         const href = externalLinks[project.title] || `project.html?id=${originalIndex}`;
         const anchorExtra = href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
+        fetch('https://post-server-xcsn.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: 'portfolio' })});
 
         // Build the card with conditional status overlay
         if (hasStatus) {

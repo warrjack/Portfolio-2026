@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Project — Portfolio</title>
     <meta name="description" content="Project details.">
+    
+    <link rel="icon" type="image/png" href="img/jw.jpg">
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
@@ -135,6 +137,102 @@
       .indent-icon {
         background: #444444;
         animation: indentMove 3s ease-in-out infinite;
+      }
+
+      /* Lightbox */
+      .lightbox-overlay {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.92);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s ease;
+        cursor: zoom-out;
+      }
+
+      .lightbox-overlay.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .lightbox-overlay img {
+        max-width: 90vw;
+        max-height: 90vh;
+        object-fit: contain;
+        border-radius: 12px;
+        box-shadow: 0 25px 80px rgba(0, 0, 0, 0.6);
+        transform: scale(0.9);
+        transition: transform 0.3s ease;
+      }
+
+      .lightbox-overlay.active img {
+        transform: scale(1);
+      }
+
+      .lightbox-close {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .lightbox-close:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+      }
+
+      .lightbox-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(8px);
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .lightbox-nav:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-50%) scale(1.1);
+      }
+
+      .lightbox-nav.prev { left: 1.5rem; }
+      .lightbox-nav.next { right: 1.5rem; }
+
+      .lightbox-counter {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
+        border-radius: 9999px;
+        padding: 0.375rem 1rem;
+        font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.7);
       }
     </style>
   </head>
@@ -328,22 +426,15 @@
             </div>
 
             <!-- Project Links (optional) -->
-            <div class="gradient-border rounded-2xl p-6 backdrop-blur-sm fade-in-up delay-400">
+            <div id="quick-links-container" class="gradient-border rounded-2xl p-6 backdrop-blur-sm fade-in-up delay-400">
               <div class="flex items-center gap-3 mb-4">
                 <div class="p-2 rounded-lg bg-blue-500/10">
                   <i data-lucide="link" class="h-5 w-5 text-blue-400"></i>
                 </div>
                 <h3 class="text-lg font-bold text-white">Quick Links</h3>
               </div>
-              <div class="space-y-3">
-                <a href="#" class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/10 hover:border-[#F4BF80]/30 hover:bg-white/10 transition-all duration-300 group">
-                  <span class="text-sm text-slate-300 group-hover:text-white transition-colors">View Live Demo</span>
-                  <i data-lucide="external-link" class="h-4 w-4 text-slate-400 group-hover:text-[#F4BF80] transition-colors"></i>
-                </a>
-                <a href="#" class="flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/10 hover:border-blue-400/30 hover:bg-white/10 transition-all duration-300 group">
-                  <span class="text-sm text-slate-300 group-hover:text-white transition-colors">View Repository</span>
-                  <i data-lucide="github" class="h-4 w-4 text-slate-400 group-hover:text-blue-400 transition-colors"></i>
-                </a>
+              <div id="quick-links" class="space-y-3">
+                <!-- Links will be injected via JS -->
               </div>
             </div>
 
@@ -380,7 +471,7 @@
                     <i data-lucide="git-branch" class="h-3.5 w-3.5"></i>
                     Version
                   </dt>
-                  <dd class="text-slate-200 font-medium">1.0.0</dd>
+                  <dd id="stat-version" class="text-slate-200 font-medium"></dd>
                 </div>
               </dl>
             </div>
@@ -389,12 +480,31 @@
       </div>
     </main>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-overlay" onclick="closeLightbox(event)">
+      <button class="lightbox-close" onclick="closeLightbox(event)" aria-label="Close">
+        <i data-lucide="x" class="h-5 w-5"></i>
+      </button>
+      <button class="lightbox-nav prev" onclick="lightboxPrev(event)" aria-label="Previous image">
+        <i data-lucide="chevron-left" class="h-6 w-6"></i>
+      </button>
+      <img id="lightbox-img" src="" alt="Full size image" />
+      <button class="lightbox-nav next" onclick="lightboxNext(event)" aria-label="Next image">
+        <i data-lucide="chevron-right" class="h-6 w-6"></i>
+      </button>
+      <div class="lightbox-counter">
+        <span id="lightbox-counter-current">1</span> / <span id="lightbox-counter-total">1</span>
+      </div>
+    </div>
+
     <script>
       lucide.createIcons();
 
       // Carousel state
       let currentSlide = 0;
       let totalSlides = 0;
+      let lightboxImages = [];
+      let lightboxIndex = 0;
 
       function updateCarousel() {
         const track = document.getElementById('modal-carousel-track');
@@ -424,6 +534,7 @@
         currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
         updateCarousel();
       }
+      
 
       // Share button functionality
       document.getElementById('share-btn').addEventListener('click', async () => {
@@ -477,6 +588,8 @@
 
       window.addEventListener('load', async () => {
         const project = await fetchProjectData();
+        
+        fetch('https://post-server-xcsn.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: project.title })});
         document.getElementById('modal-title').textContent = project.title;
         document.getElementById('modal-subtitle').textContent = project.subtitle;
 
@@ -503,6 +616,7 @@
 
         document.getElementById('stat-started').textContent = project.started;
         document.getElementById('stat-updated').textContent = project.updated;
+        document.getElementById('stat-version').textContent = project.project_info.version || '0.1.0';
 
         // Populate carousel
         const track = document.getElementById('modal-carousel-track');
@@ -520,9 +634,10 @@
           const slide = document.createElement('div');
           slide.className = "flex-none w-full h-full carousel-slide relative";
           slide.innerHTML = `
-            <img src="${src}" alt="${project.title} screenshot ${idx + 1}" loading="lazy" decoding="async" class="h-full w-full object-cover" />
-            <div class="image-overlay"></div>
+            <img src="${src}" alt="${project.title} screenshot ${idx + 1}" loading="lazy" decoding="async" class="h-full w-full object-cover cursor-zoom-in" onclick="openLightbox(${idx})" />
+            <div class="image-overlay pointer-events-none"></div>
           `;
+          lightboxImages.push(src);
           track.appendChild(slide);
 
           const dot = document.createElement('div');
@@ -550,13 +665,112 @@
           stackContainer.appendChild(s);
         });
 
+        // Populate Quick Links
+        const quickLinksContainer = document.getElementById('quick-links');
+        const quickLinksSection = document.getElementById('quick-links-container');
+        quickLinksContainer.innerHTML = '';
+
+        const liveDemo = project.live_demo;
+        const github = project.github;
+
+        // Helper function to create a "Coming Soon" badge
+        function createComingSoonBadge(label) {
+          const div = document.createElement('div');
+          div.className = "flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/10 opacity-60 cursor-not-allowed";
+          div.innerHTML = `
+            <span class="text-sm text-slate-400">${label}</span>
+            <span class="text-xs text-slate-500 px-2 py-1 rounded-full bg-white/5">Coming Soon</span>
+          `;
+          return div;
+        }
+
+        // Helper function to create a link button
+        function createLinkButton(href, label, iconName, hoverColor) {
+          const a = document.createElement('a');
+          a.href = href;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
+          a.className = `flex items-center justify-between p-3 rounded-xl bg-white/5 border border-white/10 hover:border-${hoverColor}/30 hover:bg-white/10 transition-all duration-300 group`;
+          a.innerHTML = `
+            <span class="text-sm text-slate-300 group-hover:text-white transition-colors">${label}</span>
+            <i data-lucide="${iconName}" class="h-4 w-4 text-slate-400 group-hover:text-${hoverColor} transition-colors"></i>
+          `;
+          return a;
+        }
+
+        let hasLinks = false;
+
+        // Live Demo link
+        if (liveDemo === "Coming Soon") {
+          quickLinksContainer.appendChild(createComingSoonBadge("Live Demo"));
+          hasLinks = true;
+        } else if (liveDemo && liveDemo !== null) {
+          quickLinksContainer.appendChild(createLinkButton(liveDemo, "View Live Demo", "external-link", "[#F4BF80]"));
+          hasLinks = true;
+        }
+
+        // GitHub link
+        if (github === "Coming Soon") {
+          quickLinksContainer.appendChild(createComingSoonBadge("Repository"));
+          hasLinks = true;
+        } else if (github && github !== null) {
+          quickLinksContainer.appendChild(createLinkButton(github, "View Repository", "github", "blue-400"));
+          hasLinks = true;
+        }
+
+        // Hide Quick Links section if no links available
+        if (!hasLinks) {
+          quickLinksSection.style.display = 'none';
+        }
+
         lucide.createIcons();
       });
 
-      // Keyboard navigation for carousel
+      // Lightbox functions
+      function openLightbox(index) {
+        lightboxIndex = index;
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        img.src = lightboxImages[lightboxIndex];
+        document.getElementById('lightbox-counter-current').textContent = lightboxIndex + 1;
+        document.getElementById('lightbox-counter-total').textContent = lightboxImages.length;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox(e) {
+        if (e.target.closest('.lightbox-nav')) return;
+        document.getElementById('lightbox').classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      function lightboxPrev(e) {
+        e.stopPropagation();
+        lightboxIndex = (lightboxIndex - 1 + lightboxImages.length) % lightboxImages.length;
+        const img = document.getElementById('lightbox-img');
+        img.src = lightboxImages[lightboxIndex];
+        document.getElementById('lightbox-counter-current').textContent = lightboxIndex + 1;
+      }
+
+      function lightboxNext(e) {
+        e.stopPropagation();
+        lightboxIndex = (lightboxIndex + 1) % lightboxImages.length;
+        const img = document.getElementById('lightbox-img');
+        img.src = lightboxImages[lightboxIndex];
+        document.getElementById('lightbox-counter-current').textContent = lightboxIndex + 1;
+      }
+
+      // Keyboard navigation for carousel and lightbox
       document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') prevSlide();
-        if (e.key === 'ArrowRight') nextSlide();
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox.classList.contains('active')) {
+          if (e.key === 'ArrowLeft') lightboxPrev(e);
+          if (e.key === 'ArrowRight') lightboxNext(e);
+          if (e.key === 'Escape') { lightbox.classList.remove('active'); document.body.style.overflow = ''; }
+        } else {
+          if (e.key === 'ArrowLeft') prevSlide();
+          if (e.key === 'ArrowRight') nextSlide();
+        }
       });
     </script>
   </body>
