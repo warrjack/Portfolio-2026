@@ -145,8 +145,7 @@
         // If this project's title exists in `externalLinks`, open that URL instead
         const href = externalLinks[project.title] || `project.html?id=${originalIndex}`;
         const anchorExtra = href.startsWith('http') ? ' target="_blank" rel="noopener noreferrer"' : '';
-        fetch('https://post-server-xcsn.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: 'portfolio' })});
-
+        
         // Build the card with conditional status overlay
         if (hasStatus) {
           // Status card: greyscale image with overlay text
@@ -239,6 +238,7 @@
           console.error('Error loading projects.json:', error);
         }
       }
+      fetch('https://post-server-xcsn.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: 'portfolio' })});
 
       // Load projects on page load
       window.addEventListener('load', loadProjects);
