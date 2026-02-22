@@ -61,10 +61,36 @@
         .timeline-content:not(.md\:text-right) { margin-right: auto; margin-left: 0; text-align: left; }
       }
     </style>
-  </head>
+   </head>
   <body class="bg-[#0b0d10] text-slate-200 selection:bg-[#F4BF80]/20 antialiased overflow-x-hidden">
     <!-- Accessibility: skip link -->
     <a class="sr-only focus:not-sr-only absolute left-4 top-4 rounded px-2 py-1 bg-black/60 text-white text-sm" href="#main-content">Skip to content</a>
+
+    <!-- SEO: noscript fallback so search engines index content without JS -->
+    <noscript>
+      <div style="max-width:800px;margin:40px auto;padding:0 24px;font-family:sans-serif;color:#e2e8f0;">
+        <h1>Jack Warr — Software Engineer &amp; Entrepreneur</h1>
+        <p>Software Developer, Entrepreneur, and Public Speaker. I turn ideas into software, software into products, and sometimes products into businesses.</p>
+        <h2>About Jack Warr</h2>
+        <p>I am an entrepreneur and software developer who likes turning ideas into products, and products into businesses. Most of what I build starts as an experiment. I enjoy learning fast, testing ideas quickly, and solving problems that feel real. Over time, that mindset has led me to ship apps, build tools, start businesses, and help others with their own startups.</p>
+        <h2>Journey</h2>
+        <ul>
+          <li><strong>2012</strong> — Hello World! Began programming in Java.</li>
+          <li><strong>2014</strong> — InfoSwap: iOS app for exchanging professional contact information.</li>
+          <li><strong>2015</strong> — Completed summer programming courses at Princeton University.</li>
+          <li><strong>2017</strong> — Evvents (24) App: iOS app for event-based digital content.</li>
+          <li><strong>2019</strong> — Acadia University: undergraduate computer science.</li>
+          <li><strong>2020</strong> — Dalhousie University: continued computer science studies.</li>
+          <li><strong>2021</strong> — Commercial game development with Activision-backed studios.</li>
+          <li><strong>2023</strong> — Business Administration: product strategy and growth.</li>
+          <li><strong>2024</strong> — Front Cover Development: software studio for web products.</li>
+          <li><strong>Now</strong> — Speaking at institutions and universities on product execution and venture growth.</li>
+        </ul>
+        <h2>Contact</h2>
+        <p>Available for speaking engagements and advisory roles.</p>
+        <p><a href="mailto:jack@frontcoverdev.com">Email</a> | <a href="https://www.linkedin.com/in/jackwarr">LinkedIn</a> | <a href="https://github.com/warrjack">GitHub</a></p>
+      </div>
+    </noscript>
     
     <!-- Navigation -->
     <header class="fixed top-0 inset-x-0 z-40">
@@ -88,7 +114,7 @@
     <main id="main-content" class="transition-opacity duration-300">
       <!-- Hero -->
       <section id="home" class="relative min-h-screen w-full">
-        <img src="img/splash_compressed.jpg" alt="Hero background" class="absolute inset-0 h-full w-full object-cover object-center">
+        <img src="img/splash_compressed.jpg" alt="Hero background" class="absolute inset-0 h-full w-full object-cover object-center" width="1920" height="1080" fetchpriority="high">
         <div class="absolute inset-0 bg-gradient-to-tr from-[#0b0d10] via-[#0b0d10]/70 to-transparent"></div>
 
         <div class="relative z-10 flex min-h-screen items-end md:items-center">
@@ -147,7 +173,7 @@
             </div>
             <div class="md:col-span-6 relative">
               <div class="aspect-[4/3] w-full overflow-hidden rounded-2xl border border-white/10 bg-zinc-900/50">
-                <img src="img/aboutt.jpg" class="h-full w-full object-cover opacity-60 scale-110 origin-center-left" alt="Workspace">
+                <img src="img/aboutt.jpg" class="h-full w-full object-cover opacity-60 scale-110 origin-center-left" alt="Jack Warr workspace" width="800" height="600" loading="lazy">
               </div>
             </div>
           </div>
@@ -290,7 +316,7 @@
                 <span class="inline-block rounded-full bg-emerald-500/10 px-3 py-1 text-xs font-medium text-emerald-400 border border-emerald-500/20 mb-2 group-hover:bg-emerald-500/20 group-hover:text-emerald-300 group-hover:border-emerald-400 transition-colors">Now</span>
                 <h3 class="text-xl font-semibold text-white group-hover:text-emerald-300 transition-colors">Presentation and Growth</h3>
                 <p class="mt-2 text-slate-400 text-sm leading-relaxed group-hover:text-slate-200 transition-colors">
-                  Growing Front Cover Development while speaking at institutions and universitys, sharing insights on product execution and early-stage venture growth.
+                  Growing Front Cover Development while speaking at institutions and universities, sharing insights on product execution and early-stage venture growth.
                 </p>
               </div>
             </div>
@@ -337,7 +363,7 @@
             <a href="mailto:jack@frontcoverdev.com" class="rounded-full bg-white px-6 py-3 text-sm font-semibold text-black hover:bg-slate-200 transition-colors">
               Email Me
             </a>
-            <a href="https://www.linkedin.com/in/jackwarr" class="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors">
+            <a href="https://www.linkedin.com/in/jackwarr" target="_blank" rel="noopener noreferrer" class="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm font-semibold text-white hover:bg-white/10 transition-colors">
               LinkedIn
             </a>
           </div>
@@ -393,7 +419,7 @@
         return { text: 'text-[#F4BF80]', hover: 'group-hover:text-[#F4BF80]' };
       }
       
-        fetch('https://post-server-xcsn.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: 'home' })});
+        fetch('https://post-server-4nqs.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: 'home' })});
       // Create a featured project card
       function createFeaturedCard(project, originalIndex) {
         const card = document.createElement('a');
