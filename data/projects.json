@@ -393,18 +393,18 @@
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "img/project-content/Luminara_1.png",
+    "splash_image": "img/project-content/Luminara_1.jpg",
     "project_info": {
       "type": "flagship",
       "status": "active",
       "version": "3.7.0"
     },
     "images": [
-      "img/project-content/Luminara_2.png",
-      "img/project-content/Luminara_3.png",
-      "img/project-content/Luminara_4.png",
-      "img/project-content/Luminara_5.png",
-      "img/project-content/Luminara_6.png"
+      "img/project-content/Luminara_2.jpg",
+      "img/project-content/Luminara_3.jpg",
+      "img/project-content/Luminara_4.jpg",
+      "img/project-content/Luminara_5.jpg",
+      "img/project-content/Luminara_6.jpg"
     ]
   },
   {
