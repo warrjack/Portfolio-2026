@@ -384,26 +384,27 @@
     ]
   },
   {
-    "title": "Lorcana Card Management",
-    "subtitle": "AI Card Recognition & Database",
-    "desc": "The Lorcana Collection Manager is a full stack web application designed to help players scan, organize, and build decks from their physical card collections. It solves the biggest pain point Lorcana players face: manually entering hundreds of cards across multiple apps that were never built for this game.\n\n With this tool, users can scan cards directly from a phone or webcam, instantly add them to their collection, and track where each copy is stored. Cards can be filtered by set, color, rarity, duplicates, value, and deck legality. Users can import and export deck lists, track extra copies for selling or trading, and view a dashboard showing total cards owned, estimated value, and collection completion by set.\n\n Deck building is rule aware. Each deck must follow color limits, card count requirements, and copy restrictions. If a user is missing cards, the app shows exactly what is missing and suggests alternatives from their collection with explanations like cost efficiency, synergy, or lore value. When a deck is deleted, the app tells the user where each card should be returned.\n\n Each card has a detailed profile including keywords, cost, lore, artist, flavor text, variants, and storage location. Users have private accounts so collections and decks are fully personalized. The system is built to easily support new Lorcana sets as they are released.\n\n This project began when I realized there were no reliable scanning tools for Lorcana. I first built a one shot learning system using a Siamese neural network to compare card images based on similarity. Since I only had one clean image per card, I used heavy image augmentation such as blur, color shifts, brightness changes, and cropping to simulate real camera conditions.\n\n The early version worked well enough to become a client product, but I wanted near perfect accuracy. I rebuilt the model using a ResNet architecture and trained it for days at a time. It eventually reached 99.87 percent accuracy. During testing, I discovered over 500 errors in existing card APIs, so I scraped and verified data across multiple sources and built my own custom dataset and API.\n\n I automated the full training pipeline to download clean card images, generate hundreds of variations per card, retrain the model, and redeploy. I then rebuilt the scanner from Python into a browser based React experience so users could scan from any device.\n\n The result is a scalable, AI powered platform built for the future of the Lorcana community.",
+    "title": "Luminara",
+    "subtitle": "AI-Powered Card Collection Platform",
+    "desc": "Luminara is a full stack web application designed to help players scan, organize, and build decks from their physical card collections. It solves the biggest pain point collectors face: manually entering hundreds of cards across multiple apps that were never built for this game.\n\n With this tool, users can scan cards directly from a phone or webcam, instantly add them to their collection, and track where each copy is stored. Cards can be filtered by set, color, rarity, duplicates, value, and deck legality. Users can import and export deck lists, track extra copies for selling or trading, and view a dashboard showing total cards owned, estimated value, and collection completion by set.\n\n Deck building is rule aware. Each deck must follow color limits, card count requirements, and copy restrictions. If a user is missing cards, the app shows exactly what is missing and suggests alternatives from their collection with explanations like cost efficiency, synergy, or lore value. When a deck is deleted, the app tells the user where each card should be returned.\n\n Each card has a detailed profile including keywords, cost, lore, artist, flavor text, variants, and storage location. Users have private accounts so collections and decks are fully personalized. The system is built to easily support new sets as they are released.\n\n This project began when I realized there were no reliable scanning tools for the game. I first built a one shot learning system using a Siamese neural network to compare card images based on similarity. Since I only had one clean image per card, I used heavy image augmentation such as blur, color shifts, brightness changes, and cropping to simulate real camera conditions.\n\n The early version worked well enough to become a client product, but I wanted near perfect accuracy. I rebuilt the model using a ResNet architecture and trained it for days at a time. It eventually reached 99.87 percent accuracy. During testing, I discovered over 500 errors in existing card APIs, so I scraped and verified data across multiple sources and built my own custom dataset and API.\n\n I automated the full training pipeline to download clean card images, generate hundreds of variations per card, retrain the model, and redeploy. I then rebuilt the scanner from Python into a browser based React experience so users could scan from any device.\n\n The result is a scalable, AI powered platform built for the Luminara community.",
     "stack": ["Fullstack", "React", "Django", "PyTorch", "OpenCV", "TailwindCSS", "RestAPI"],
     "started": "Jul 2024",
     "updated": "Feb 2026",
     "role": "Solo Developer",
     "live_demo": null,
     "github": null,
-    "splash_image": "img/project-content/Disney_Lorcana_1.jpg",
+    "splash_image": "img/project-content/Luminara_1.png",
     "project_info": {
       "type": "flagship",
       "status": "active",
       "version": "3.7.0"
     },
     "images": [
-      "img/project-content/Lorcana_Scanner_1.png",
-      "img/project-content/Lorcana_Scanner_2.png",
-      "img/project-content/Lorcana_Scanner_3.png",
-      "img/project-content/Lorcana_Scanner_4.jpg"
+      "img/project-content/Luminara_2.png",
+      "img/project-content/Luminara_3.png",
+      "img/project-content/Luminara_4.png",
+      "img/project-content/Luminara_5.png",
+      "img/project-content/Luminara_6.png"
     ]
   },
   {
