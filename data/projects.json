@@ -1,23 +1,29 @@
 [
   {
-    "title": "Finance Planner",
+    "title": "Chirvo",
     "subtitle": "Making now and future money visible",
-    "desc": "This project started from a simple problem I kept running into in real life. Most people are paid bi weekly, but their bills come out on completely different schedules. Some are monthly, some quarterly, some annual, and some happen every single week. It becomes hard to understand what you can actually afford when everything runs on different timelines. I built this finance tracker to make those patterns visible and easy to understand.\n\n The core of the app is a two table system. The first table lets users enter their recurring bills with a name, amount, and frequency. Supported frequencies include daily, weekly, bi weekly, monthly, quarterly, semi annual, and annual. Once the user submits the data, the app automatically converts each bill into its real cost across every other time scale.\n\n The second table shows seven columns, one for each frequency. Each row represents a bill from the input table, but now users can see exactly how much that expense costs them per day, per week, per pay period, per month, and beyond. This makes it easy to compare habits, spot overspending, and understand how small charges can grow over time.\n\n I also added a calendar forecasting feature. Users can enter their current bank balance, add paychecks with start dates, and track when each bill is due. The app updates a running total for every day, including one time expenses. Over time, this shows exactly how much money a user can expect to have on any future date, making planning simple and realistic.",
+    "desc": "Chirvo is a full stack personal finance web application designed to help people understand whether they can make it through the month. It solves a common problem for people who are paid on one schedule while their bills, debts, subscriptions, and everyday expenses happen on completely different timelines.\n\n With this tool, users can enter their current balance, income, bills, debts, and savings goals, then see a day-by-day projection of their financial position. Instead of showing a vague monthly budget, Chirvo shows what a user's balance is expected to be on each day of the month based on when money actually comes in and when payments actually go out.\n\n The app is built around plain language and guided setup. Users do not need financial knowledge, bank connections, or complicated spreadsheets. The onboarding flow walks them through their income and expenses, while quick-add options help surface common costs people often forget, such as coffee, takeout, gas, subscriptions, and personal spending.\n\n Chirvo also includes a Real Balance view, which shows how much money is actually available after accounting for bills that are already spoken for. This helps users avoid the false confidence of seeing money in their bank account that is already committed to upcoming expenses.\n\n Debt tracking and savings goals are built directly into the system. Users can track credit cards, loans, payoff timelines, monthly payments, goal progress, deadlines, and required contributions. These items feed back into the budget and calendar so the user does not need to enter the same information in multiple places.\n\n The app is privacy-first and local-first. Users can start without an account, and their data is saved directly in the browser. Creating an account is optional and unlocks cloud sync across devices. No bank credentials are required, which keeps the experience simple, controlled, and less invasive.\n\n This project began from a real frustration with traditional budgeting tools. Most apps focus on categories, averages, or past spending, but they do not clearly answer the question people actually care about: \"Will I have enough money on the day I need it?\" I built Chirvo around that question first, then expanded the system into budgeting, forecasting, debt tracking, savings goals, dashboard summaries, and Pro features.\n\n The result is a practical, privacy-focused financial planning platform built to make future money easier to understand.",
     "stack": ["HTML", "CSS", "Javascript"],
     "started": "Dec 2023",
     "updated": "Feb 2024",
     "role": "Solo Developer",
     "live_demo": "Coming Soon",
     "github": "Coming Soon",
-    "splash_image": "img/project-content/Finance_Planner_Cover.jpg",
+    "splash_image": "img/project-content/Chirvo_1.jpg",
     "project_info": {
       "type": "personal",
       "status": "demo",
       "version": "0.3.3"
     },
     "images": [
-      "img/project-content/Finance_Planner_2.jpg",
-      "img/project-content/Finance_Planner_3.jpg"
+      "img/project-content/Chirvo_2.jpg",
+      "img/project-content/Chirvo_3.jpg",
+      "img/project-content/Chirvo_4.jpg",
+      "img/project-content/Chirvo_5.jpg",
+      "img/project-content/Chirvo_6.jpg",
+      "img/project-content/Chirvo_7.jpg",
+      "img/project-content/Chirvo_8.jpg",
+      "img/project-content/Chirvo_9.jpg"
     ]
   },
   {
