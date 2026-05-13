@@ -77,6 +77,29 @@
     ]
   },
   {
+    "title": "LocalVault",
+    "subtitle": "Local-First Desktop Password Manager",
+    "desc": "LocalVault is a desktop password manager designed around a simple idea: your passwords should belong to you, not a cloud service you know nothing about. Instead of storing credentials on remote servers, LocalVault keeps everything inside an encrypted vault file that the user controls completely.\n\n With this tool, users can create portable encrypted vault files, securely store credentials, generate strong passwords, and quickly search, edit, or copy entries through a focused desktop interface. Vaults can be stored anywhere the user chooses, including local drives, external storage devices, or self-managed sync folders.\n\n The application is fully offline by design. No account is required, no telemetry is collected, and the desktop app does not rely on cloud infrastructure or network permissions. The goal was to create a password manager that prioritizes ownership, portability, and simplicity without sacrificing strong security defaults.\n\n Passwords and sensitive notes are never exposed unnecessarily to the frontend. Credential data is encrypted using AES-256-GCM, while master passphrases are processed using Argon2id key derivation with modern cryptographic defaults. The vault system also includes automatic locking, clipboard clearing, secure password generation, and memory-conscious session handling to reduce everyday risk.\n\n The app itself is built as a full desktop application using React, TypeScript, Tailwind CSS, Tauri, and Rust. The frontend handles the user interface and state management, while the Rust backend owns encryption, vault persistence, secure session management, and password generation. Security-sensitive operations were intentionally kept outside of the frontend wherever possible.\n\n This project began after realizing how much trust modern password managers ask users to place in unknown infrastructure. Most existing solutions rely heavily on cloud accounts, browser synchronization, subscriptions, and permanent online connectivity. I wanted to explore a local-first alternative where the vault itself could remain entirely under the user's control.\n\n As development progressed, the project expanded beyond simple encrypted storage into a broader study of security architecture, desktop application design, file-based persistence, and secure user experience design. I implemented encrypted vault creation, atomic save behavior, secure password generation, auto-lock systems, clipboard protection, and typed IPC communication between the frontend and Rust backend.\n\n The result is a local-first credential management platform built around privacy, portability, and user ownership.",
+    "stack": ["React", "TypeScript", "TailwindCSS", "Tauri", "Rust"],
+    "started": "Jan 2026",
+    "updated": "May 2026",
+    "role": "Solo Developer",
+    "live_demo": null,
+    "github": null,
+    "splash_image": "img/project-content/LocalVault_1.jpg",
+    "project_info": {
+      "type": "security",
+      "status": "active",
+      "version": "1.0.0"
+    },
+    "images": [
+      "img/project-content/LocalVault_2.png",
+      "img/project-content/LocalVault_3.png",
+      "img/project-content/LocalVault_4.png",
+      "img/project-content/LocalVault_5.png"
+    ]
+  },
+  {
     "title": "Ant Simulation",
     "subtitle": "Simulating Ant Colony Behavior",
     "desc": "This Unity project is a simple 2D simulation inspired by how ants forage in the real world. Ants move across the screen searching aimlessly for food while leaving behind magenta pheromone trails that mark where they have been.\n\n When an ant discovers food, it carries it back to the hive while dropping a second type of pheromone in cyan. This trail signals that food has been found. Other ants that encounter these cyan pheromones will follow the path to the food source and help transport it back to the hive.\n\n Over time, the ants naturally converge on the most efficient route between the hive and the food. This happens because shorter paths are reinforced more frequently. Ants traveling a shorter route return faster and deposit pheromones more often, making those paths stronger and more attractive than longer ones. Less efficient paths fade as their pheromones dissipate.\n\n The system also works around obstacles, with ants adapting their routes organically rather than relying on predefined paths. No ant knows the optimal route on its own. The behavior emerges entirely from simple rules and local decision making.\n\n I wanted to build this project to explore emergent systems and collective intelligence. It demonstrates how complex, intelligent behavior can arise from very simple agents following basic rules, without any centralized control.",
