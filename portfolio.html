@@ -74,6 +74,7 @@
       </div>
     </main>
 
+    <script src="analytics.js"></script>
     <script>
       lucide.createIcons();
 
@@ -240,7 +241,7 @@
           console.error('Error loading projects.json:', error);
         }
       }
-      fetch('https://post-server-4nqs.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: 'portfolio' })});
+      initAnalytics('Portfolio-Gallery');
 
       // Load projects on page load
       window.addEventListener('load', loadProjects);

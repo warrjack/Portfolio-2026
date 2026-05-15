@@ -451,6 +451,7 @@
       </div>
     </div>
 
+    <script src="analytics.js"></script>
     <script>
       lucide.createIcons();
 
@@ -492,6 +493,7 @@
 
       // Share button functionality
       document.getElementById('share-btn').addEventListener('click', async () => {
+        trackClick('Project - Share: ' + document.getElementById('modal-title').textContent);
         if (navigator.share) {
           try {
             await navigator.share({
@@ -543,7 +545,7 @@
       window.addEventListener('load', async () => {
         const project = await fetchProjectData();
         
-        fetch('https://post-server-4nqs.onrender.com/load',{ method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ page: project.title })});
+        initAnalytics('Portfolio-' + project.title);
         document.getElementById('modal-title').textContent = project.title;
         document.getElementById('modal-subtitle').textContent = project.subtitle;
 
