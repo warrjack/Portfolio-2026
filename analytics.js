@@ -1,5 +1,10 @@
 (function () {
+  // ─── Config ──────────────────────────────────────────────────────────
+  // Set POST_SERVER to your AdminDashboard URL and ANALYTICS_TOKEN to the
+  // ingest token shown on the Analytics → Setup section for this site.
   var POST_SERVER = 'https://post-server-4nqs.onrender.com';
+  var ANALYTICS_TOKEN = 'c0cf16cb-9bad-4588-a018-1142ec38d95f-1f0c38c9-1fba-49b8-b439-239855019648';
+  // ─────────────────────────────────────────────────────────────────────
   var BOT = /bot|crawler|spider|crawl|facebookexternalhit|twitterbot|linkedinbot|slackbot|discordbot|telegrambot|whatsapp|preview|unfurl|applebot|curl|wget|python-requests|java\/|go-http-client/i;
 
   function getSessionId() {
@@ -43,7 +48,7 @@
   function post(path, body) {
     fetch(POST_SERVER + path, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json', 'X-Analytics-Token': ANALYTICS_TOKEN },
       keepalive: true,
       body: JSON.stringify(body)
     }).catch(function () {});
