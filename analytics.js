@@ -113,14 +113,28 @@
       isInternal: internal,
     });
 
-    // ── Scroll depth + time on page ──────────────────────────────────
+    // ── Scroll depth + milestones + time on page ─────────────────────
     var t0 = Date.now();
     var maxScroll = 0;
+    var milestones = [25, 50, 75, 100];
+    var firedMilestones = {};
 
     window.addEventListener('scroll', function () {
       var el = document.documentElement;
       var pct = Math.round(((el.scrollTop + el.clientHeight) / el.scrollHeight) * 100);
       if (pct > maxScroll) maxScroll = pct;
+      milestones.forEach(function (m) {
+        if (!firedMilestones[m] && pct >= m) {
+          firedMilestones[m] = true;
+          post('/event', {
+            sessionId: sid,
+            type: 'scroll_milestone',
+            name: m + '%',
+            metadata: { milestone: m },
+            occurredAt: new Date().toISOString(),
+          });
+        }
+      });
     }, { passive: true });
 
     function sendEnd() {
