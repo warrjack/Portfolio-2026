@@ -661,7 +661,11 @@
           quickLinksContainer.appendChild(createComingSoonBadge("Live Demo"));
           hasLinks = true;
         } else if (liveDemo && liveDemo !== null) {
-          quickLinksContainer.appendChild(createLinkButton(liveDemo, "View Live Demo", "external-link", "[#F4BF80]"));
+          var demoBtn = createLinkButton(liveDemo, "View Live Demo", "external-link", "[#F4BF80]");
+          demoBtn.addEventListener('click', function() {
+            trackConversion('Live Demo Clicked: ' + project.title);
+          });
+          quickLinksContainer.appendChild(demoBtn);
           hasLinks = true;
         }
 
@@ -670,7 +674,11 @@
           quickLinksContainer.appendChild(createComingSoonBadge("Repository"));
           hasLinks = true;
         } else if (github && github !== null) {
-          quickLinksContainer.appendChild(createLinkButton(github, "View Repository", "github", "blue-400"));
+          var repoBtn = createLinkButton(github, "View Repository", "github", "blue-400");
+          repoBtn.addEventListener('click', function() {
+            trackClick('Repo Clicked: ' + project.title);
+          });
+          quickLinksContainer.appendChild(repoBtn);
           hasLinks = true;
         }
 

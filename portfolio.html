@@ -190,6 +190,15 @@
             </a>
           `;
         }
+        // Track project card clicks (internal nav won't be caught by the auto link-click handler)
+        if (!hasStatus) {
+          var cardAnchor = card.querySelector('a');
+          if (cardAnchor) {
+            cardAnchor.addEventListener('click', function() {
+              trackClick('Project Card: ' + project.title);
+            });
+          }
+        }
         return card;
       }
 
