@@ -1,7 +1,7 @@
 (function () {
   // ─── Config ──────────────────────────────────────────────────────────
-  var POST_SERVER = 'https://post-server-4nqs.onrender.com';
-  var ANALYTICS_TOKEN = 'c0cf16cb-9bad-4588-a018-1142ec38d95f-1f0c38c9-1fba-49b8-b439-239855019648';
+  var POST_SERVER = 'https://post-server-4nqs.onrender.com/api/analytics';
+  var ANALYTICS_TOKEN = 'c1a9970d-cccf-4726-9f8a-45dbded09ad2-ea038cc5-54b5-420f-a790-055053af0839';
   // ─────────────────────────────────────────────────────────────────────
 
   var BOT = /bot|crawler|spider|crawl|facebookexternalhit|twitterbot|linkedinbot|slackbot|discordbot|telegrambot|whatsapp|preview|unfurl|applebot|curl|wget|python-requests|java\/|go-http-client/i;
